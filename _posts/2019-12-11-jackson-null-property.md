@@ -5,7 +5,7 @@ date: 2019-12-11 22:25 +0900
 categories: [Spring]
 ---
 백단에서 데이터를 프론트 단에 넘길 때, 객체에 대한 property값이 널인 경우까지 넘어 간다. 
-# 예제 코드 
+## 예제 코드 
 ```java 
 public class Account {
     private String name;
@@ -28,7 +28,7 @@ public void create_account_null_test(){
 ```
 
 
-# 1. 지역적으로 처리 
+## 1. 지역적으로 처리 
 ```java 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Account {
@@ -39,7 +39,7 @@ public class Account {
 }
 ```
 
-# 2. 전역적으로 설정하는 방법 
+## 2. 전역적으로 설정하는 방법 
 ```java
 @Configuration
 public class JacksonConfiguration {

@@ -97,39 +97,36 @@ json String값을 넘겼을 때, Json형식으로 Raw한 형태로 변환시켜 
 @Setter
 @JsonPropertyOrder({"id", "age", "name"})
 public class Account {
+  
+  private Long id;
+  private String name;
+  private String password;
+  private String age;
 
-
-    private Long id;
-    private String name;
-  	@JsonIgnore
-  	private String password;
-    private String age;
-
-  	@JsonRawValue
-    private String type;
+  @JsonRawValue
+  private String type;
 }
 ```
 
 type은 Account가 어디를 통해서 접속했는지를 판단해주는 필드 입니다. 
 
 ```java
-		@Test
-    public void objectTest() throws JsonProcessingException {
+  @Test
+  public void objectTest() throws JsonProcessingException {
 
-        Account account = new Account();
-        account.setId(1L);
-        account.setName("andrew");
-        account.setAge("32");
-      	account.setPassword("1234");
+      Account account = new Account();
+      account.setId(1L);
+      account.setName("andrew");
+      account.setAge("32");
+      account.setPassword("1234");
 
-        account.setType("{\"device\":\"mobile\"}");
-        String s = objectMapper.writeValueAsString(account);
-        System.out.println(s);
+      account.setType("{\"device\":\"mobile\"}");
+      String s = objectMapper.writeValueAsString(account);
+      System.out.println(s);
 
-        Assert.assertThat(s, containsString("andrew"));
-        Assert.assertThat(s, containsString("Name"));
-
-    }
+      Assert.assertThat(s, containsString("andrew"));
+      Assert.assertThat(s, containsString("Name"));
+  }
 ```
 
  만약에 @JsonRawValue를 사용하지 않았다면 결과는 다음과 같습니다 

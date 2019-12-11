@@ -284,10 +284,10 @@ table td { border: 1px solid #e8e8e8; }
 
 .highlight .il { color: #099; }
 
-@font-face {
+/* @font-face {
   font-family: "Gidole-Regular";
     src: url( './fonts/Gidole-Regular.ttf') format( 'truetype');
-}
+} */
 
 /* @import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css); */
 

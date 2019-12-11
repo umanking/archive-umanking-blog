@@ -1,8 +1,7 @@
 ---
 layout: post
-title: 쿠키에 대해서 알아보자.
+title: 쿠키란? 
 category:
-   
   - Web
 date: 2019-08-06 12:08:19
 tags:

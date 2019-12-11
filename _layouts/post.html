@@ -2,7 +2,26 @@
 layout: default
 ---
 <h1>{{page.title}}</h1>
-<p class="post-meta"><time class="dt-published" itemprop="datePublished">{{ page.date}}</time></p>
+<div class="post-categories">
+     {% if post %}
+       {% assign categories = post.categories %}
+     {% else %}
+       {% assign categories = page.categories %}
+     {% endif %}
+     {% for category in categories %}
+     <div style="float: right;">
+          <span>Categories:</span>&nbsp;<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+     </div>
+     {% unless forloop.last %}&nbsp;{% endunless %}
+     {% endfor %}
+
+<p class="post-meta" ><time class="dt-published" itemprop="datePublished">{{ page.date |  date: "%Y-%m-%d" }}</time></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>
+
 
 {{ content }}
 

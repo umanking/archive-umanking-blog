@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "[JPA] projection 살펴보기"
+categories: JPA
 date: 2019-04-12 09:08:56
- 
 ---
 > JPA를 사용해서 엔티티의 일부 데이터만 가져오는 Projection에 대해서 알아보자.
 

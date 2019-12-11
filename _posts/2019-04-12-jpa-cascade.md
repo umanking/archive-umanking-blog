@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "[JPA] cascade 옵션 살펴보기"
+categories: JPA
 date: 2019-04-12 09:01:48
- 
 ---
 
 

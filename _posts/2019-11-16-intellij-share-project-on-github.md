@@ -2,6 +2,7 @@
 layout: post
 title: "IntelliJ 프로젝트에서 Github 레포지토리 생성 방법"
 date: 2019-11-16 13:20 +0900
+categories: 꿀팁
 ---
 ## 방법
 Intellij에서 `cmd + shift + a`(만능키🔑)를 누르고 `share project ..` 라고 입력합니다. 

@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "스프링 프레임워크 - 인터뷰 질문"
+title: Spring - interview questions
 date: 2019-11-21 12:36 +0900
+categories: 학습
 ---
 ## 스프링 관련 인터뷰 모음
 

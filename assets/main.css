@@ -289,6 +289,6 @@ table td { border: 1px solid #e8e8e8; }
     src: url( './fonts/Gidole-Regular.ttf') format( 'truetype');
 }
 
-@import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+/* @import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css); */
 
 /*# sourceMappingURL=main.css.map */

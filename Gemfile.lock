@@ -33,6 +33,8 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-feed (0.12.1)
       jekyll (>= 3.7, < 5.0)
+    jekyll-redirect-from (0.15.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (2.0.1)
       sassc (> 2.0.1, < 3.0)
     jekyll-seo-tag (2.6.1)
@@ -80,6 +82,7 @@ DEPENDENCIES
   jekyll (~> 4.0.0)
   jekyll-compose
   jekyll-feed (~> 0.12)
+  jekyll-redirect-from
   jekyll-sitemap
   minima (~> 2.5)
   tzinfo (~> 1.2)

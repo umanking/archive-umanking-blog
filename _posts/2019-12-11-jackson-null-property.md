@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jackson - null property 무시 하기
+title: Jackson, Ignore NULL Fields
 date: 2019-12-11 22:25 +0900
 categories: [Spring]
 ---

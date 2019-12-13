@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Spring REST Validation (JSR-303)
+title: SpringBoot Validation(JSR-303)
 date: 2019-12-12 21:19 +0900
 categories: [Spring]
 ---
 
-기본적으로 사용자가 입력한 값은 신뢰할 수 없다!
+## 1. Overview
+**Spring Boot를 통한 REST API 샘플예제를 통해서, 도메인 객체를 validation 하는 방법을 알아보자.**
+<u>기본 전제 조건은, 유저가 넘기는 모든 데이터는 신뢰할수 없다.</u> 그렇기 때문에 모든 데이터를 반드시 검증해야 한다.
+대게 validation은 Post요청시, @RequestBody에 담길 객체에 대해서 검증하는게 일반적이다.
 
-그래서 사용자가 input으로 입력한 `도메인 객체`는 반드시 validation 해야한다. 
-
-## 1. User Domain 
+## 2. User Domain 
 ```java
 @Entity
 public class User {
@@ -27,7 +28,7 @@ public class User {
 }
 ```
 
-## 2. Implement RestControllor
+## 3. Implement RestControllor
 ```java
 @RestController
 public class UserController {
@@ -42,7 +43,7 @@ public class UserController {
 POST 요청시, 클라이언트가 넘기는 값들은 기본적으로 신뢰할 수 없다. 그렇기 때문에 validation을 반드시 해야 한다. `@Valid` 어노테이션만 붙이면, Spring Boot는 JSR303 구현체(Hibernate Validator)를 사용해서 argument값을 validate를 진행한다. 
 
 
-## 3. Exception Handling
+## 4. Exception Handling
 ```java
 @ResponseStatus(HttpStatus.BAD_REQUEST)
 @ExceptionHandler(MethodArgumentNotValidException.class)
@@ -61,7 +62,7 @@ public Map<String, String> handleValidationExceptions(MethodArgumentNotValidExce
 ```
 `@ExceptionHandler`를 통해서 `MethodArgumentNotValidException`를 핸들링 한다. errors map에 담아서 반환하면, `@RestController`의 `@ResponseBody`를 통해서 JSON 값으로 리턴된다. 
 
-## 4. TEST
+## 5. TEST
 PostMan으로 `POST /users`의 `name`과 `email` 필드 없이 빈 Json을 넘기면 다음과 같이 나온다.
 
 ```json

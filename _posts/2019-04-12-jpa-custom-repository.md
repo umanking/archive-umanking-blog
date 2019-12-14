@@ -2,6 +2,8 @@
 layout: post
 title: "[JPA] 커스텀한 레포지토리 만들기"
 categories: JPA
+redirect_from: 
+- 2019/04/12/jpa-custom-repository/
 date: 2019-04-12 09:03:41
  
 ---

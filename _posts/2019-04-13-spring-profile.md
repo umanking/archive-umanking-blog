@@ -7,6 +7,8 @@ category:
 - Spring
 tags: 
 - Spring
+redirect_from: 
+- 2019/04/13/spring-profile/
 ---
 > 스프링부트에서 각 stage마다 profile 설정을 알아보자
 

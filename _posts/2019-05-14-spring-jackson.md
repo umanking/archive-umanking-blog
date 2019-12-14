@@ -6,6 +6,9 @@ category:
 date: 2019-05-14 22:30:23
 tags: 
 - Spring
+
+redirect_from: 
+- 2019/05/14/spring-jackson/
 ---
 
 > 오늘은 Jackson 어노테이션에  대해서 알아보도록 하겠습니다. 

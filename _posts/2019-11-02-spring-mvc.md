@@ -2,6 +2,8 @@
 layout: post
 title: Spring MVC 궁금한 거
 date: 2019-11-02 21:14 +0900
+redirect_from: 
+- 2019/11/02/spring-mvc/
 ---
 최근 진행했던 프로젝트는 `Spring MVC`로 되어있는 프로젝트로, View단은 thymeleaf를 사용했다. 실제 진행하면서 궁금했던 점들이 생겼다. 궁금했던 점들을 뚜렷한 해결을 제시하지는 못한다. 다만 그 문제들에 대해서 생각해 보고자 한다.
 

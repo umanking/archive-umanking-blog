@@ -2,6 +2,8 @@
 layout: post
 title: "[JPA] H2 데이터베이스 세팅"
 categories: JPA
+redirect_from: 
+- 2019/04/12/jpa-h2-setting/
 date: 2019-04-12 09:05:02
 ---
 # 1\. 들어가며

@@ -5,6 +5,8 @@ date: 2019-04-17 09:37:42
 category: 
  
 - Spring
+redirect_from: 
+- 2019/04/17/spring-servlet-introduce/
 ---
 
 > Servlet에 대해서 알아보자

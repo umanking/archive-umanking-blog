@@ -3,6 +3,8 @@ layout: post
 title: "[JPA] transactional 살펴보기"
 categories: JPA
 date: 2019-04-12 09:09:13
+redirect_from: 
+- 2019/04/12/jpa-transactional/
 ---
 > Spring의 Transaction에 대해서 알아보자.
 

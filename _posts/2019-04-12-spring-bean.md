@@ -7,6 +7,8 @@ category:
 - Spring
 tags: 
 - Spring
+redirect_from: 
+- 2019/04/12/spring-bean/
 ---
 
 > 스프링에서 빈을 등록하는 방법과 빈생성 전처리/후처리 하는 방법에 대해서 알아보자.

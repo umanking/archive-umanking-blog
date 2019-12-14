@@ -3,6 +3,8 @@ layout: post
 title: 객체 지향 프로그래밍 입문(인프런)
 categories: 학습
 date: 2019-06-09 20:03:53
+redirect_from: 
+- 2019/06/09/oop-for-beginner/
 ---
 > 인프런 최범균님의 객체 지향 프로그랭 입문 강좌를 정리한 내용입니다.
 

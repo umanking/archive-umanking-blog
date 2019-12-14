@@ -7,6 +7,8 @@ category:
 - Spring
 tags: 
 - Spring
+redirect_from: 
+- 2019/04/12/spring-springapplication/
 ---
 # SpringBoot - SpringApplication ( applicationContext 등록 이전의 이벤트 Listener 등록 하기)
 

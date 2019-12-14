@@ -7,6 +7,8 @@ category:
 - Spring
 tags: 
 - Spring
+redirect_from: 
+- 2019/04/21/spring-mvc-dispather-servlet/
 ---
 
 

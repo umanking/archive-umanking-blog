@@ -3,6 +3,8 @@ layout: post
 title: 백앤드 개발자가 읽어야 하는 책 목록
 date: 2019-11-16 13:33 +0900
 categories: [학습]
+redirect_from: 
+- 2019/11/16/backend-required-book-list/
 ---
 
 언제고 한번쯤 `읽어야 하는`, `읽었던`, `읽고 싶은` 기술서적을 정리하려고 했는데, 드디어 시작합니다. 

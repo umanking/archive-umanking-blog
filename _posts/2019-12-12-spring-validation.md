@@ -3,6 +3,8 @@ layout: post
 title: SpringBoot Validation(JSR-303)
 date: 2019-12-12 21:19 +0900
 categories: [Spring]
+redirect_from: 
+- 2019/12/12/spring-validation/
 ---
 
 ## 1. Overview

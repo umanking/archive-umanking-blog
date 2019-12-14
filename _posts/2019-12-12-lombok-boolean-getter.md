@@ -3,6 +3,8 @@ layout: post
 title: Lombok @Getter for boolean field
 date: 2019-12-12 22:59 +0900
 categories: [Library]
+redirect_from: 
+- 2019/12/12/lombok-boolean-getter/
 ---
 
 ## 1. Overview

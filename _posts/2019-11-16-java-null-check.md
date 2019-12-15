@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "세미나 -자바 널 체크(안전한 객체 다루기)"
+title: "Java Null Check"
 date: 2019-11-16 12:26 +0900
 redirect_from: 
 - 2019/11/16/java-null-check/

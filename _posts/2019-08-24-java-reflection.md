@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Java Reflection example"
+title: "Java 리플렉션 예제"
 categories:
 - Java
 tags:

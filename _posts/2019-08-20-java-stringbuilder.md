@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java StringBuffer vs StringBuilder
+title: StringBuffer, StringBuilder의 차이
 category:
   - Java
 tags:

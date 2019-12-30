@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jackson, Ignore NULL Fields
+title: Jackson, null 필드 무시하기
 date: 2019-12-11 22:25 +0900
 categories: [Spring]
 redirect_from:

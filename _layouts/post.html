@@ -16,18 +16,27 @@ layout: default
      {% endfor %}
 
      
-<p class="post-meta" >
-     <!-- <time class="dt-published" itemprop="datePublished">{{ page.date |  date: "%Y-%m-%d" }}</time> -->
-
-     {% if page.last_modified_at %}
-     Last updated: <time class="dt-published" itemprop="datePublished">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time>
+<!-- <p class="post-meta" >
+     
+     {% if last_modified_at %}
+     Last updated: <time class="dt-published" itemprop="datePublished">{{ last_modified_at | date: "%Y-%m-%d" }}</time>
       {% else %}
-     Last updated: <time class="dt-published" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
+     Created At: <time class="dt-published" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
       {% endif %}
  {{ last_modified_at }}
-</p>
+</p> -->
 
-<!-- <p class="post-meta" ><time class="dt-published" itemprop="datePublished">{{ page.date |  date: "%Y-%m-%d" }}</time></p> -->
+<!-- <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p> -->
+<p class="post-meta">
+     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
+     {% if page.last_modified_at %}
+     (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time>)
+     {% endif %}
+     {% if page.author %}
+     • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+     {% endif %}
+   </p>
+
 <br>
 </div>
 {{ content }}

@@ -15,7 +15,19 @@ layout: default
      {% unless forloop.last %}&nbsp;{% endunless %}
      {% endfor %}
 
-<p class="post-meta" ><time class="dt-published" itemprop="datePublished">{{ page.date |  date: "%Y-%m-%d" }}</time></p>
+     
+<p class="post-meta" >
+     <!-- <time class="dt-published" itemprop="datePublished">{{ page.date |  date: "%Y-%m-%d" }}</time> -->
+
+     {% if page.last_modified_at %}
+     Last updated: <time class="dt-published" itemprop="datePublished">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time>
+      {% else %}
+     Last updated: <time class="dt-published" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
+      {% endif %}
+ {{ last_modified_at }}
+</p>
+
+<!-- <p class="post-meta" ><time class="dt-published" itemprop="datePublished">{{ page.date |  date: "%Y-%m-%d" }}</time></p> -->
 <br>
 </div>
 {{ content }}

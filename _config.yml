@@ -36,6 +36,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-last-modified-at
 whitelist:
   - jekyll-redirect-from
 

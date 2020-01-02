@@ -25,6 +25,11 @@
     <!-- {% if page.url == "/404.html" %}
     <meta http-equiv="refresh" content="5; url=/">
     {% endif %} -->
+    {% if page.image %}
+      <meta property="og:image" content="/assets/images/spongebob.png">
+    {% else %}
+      <meta property="og:image" content="/assets/images/spongebob.png">
+    {% endif %}
   </head>
   <body>
     <header class="site-header" role="banner">

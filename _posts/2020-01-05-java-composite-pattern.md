@@ -58,15 +58,37 @@ public class Client {
 
 ## 새로운 컴퓨터의 부품을 추가한다면?
 만약에 컴퓨터 부품(Speaker)가 추가했을 때 어떤 작업을 해야 할까? 
-- `Speaker` 클래스를 추가하고
+
+```java
+public class Computer {
+    Keyboard keyboard;
+    Monitor monitor;
+    // 스피커를 추가한다.
+    Speaker speaker;
+    int price;
+
+    // 생성자에서 스피커를 추가한다.
+    public Computer(Keyboard keyboard, Monitor monitor, Speaker speaker) {
+        this.keyboard = keyboard;
+        this.monitor = monitor;
+        this.speaker = speaker;
+    }
+
+    public int getPrice() {
+        // 가격을 합산하는데도, 추가해 준다. 
+        this.price = keyboard.getPrice() + monitor.getPrice() + speaker.getPrice();
+        return price;
+    }
+}
+```
 - Computer 클래스에서 Speaker 라는 클래스를 필드에 추가하고
 - Computer 클래스의 생성자에 Speaker를 파라미터로 추가하고
-- Computer 클래스의 getPrice 메서드를 수정해야 한다. 
+- Computer 클래스의 getPrice 메서드를 수정해야 한다.
+  
+OCP를 위반한다. 스피커 제품 하나를 추가했을 뿐인데, Computer 클래스를 계속 수정해야 한다. 또한, 가격 정보에서 speaker.getPrice() 코드를 깜빡하게 된다면 실제 결제하는 금액에서 스피커 가격이 포함되지 않으니 이건 엄청난 손해를 일으킬 수 있다. (물론 클라이언트들은 좋아하겠지만...)
 
-OCP를 위반한다. 스피커제품 하나를 추가했을 뿐인데, Computer 클래스를 계속 수정해야 한다.
 
-
-## 컴포지트 패턴을 통해서 구조를 변경
+## 해결책 - 컴포지트 패턴을 통해서 구조를 변경
 `ComputerDevice` 라는 추상 클래스를 만들고, 기존의 Computer에서는 여러개의 ComputerDevice를 가질 수 있는 포함하는 구조(Composite)로 가야한다.
 
 ```java

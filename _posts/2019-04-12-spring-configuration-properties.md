@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[SpringBoot] 외부설정(@ConfigurationProperties)사용 하기"
+title: "[Spring] @ConfigurationProperties를 이용한 외부 설정 정보 클래스 만들기"
 date: 2019-04-13 22:04:37
 category: 
  

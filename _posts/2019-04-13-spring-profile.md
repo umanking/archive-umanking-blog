@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Spring] profile"
+title: "[Spring] Profile 설정하기"
 date: 2019-04-13 22:02:17
 category: 
  
@@ -104,7 +104,7 @@ $ mvn clean package -DskipTests
 $ java -jar target/*.jar --spring.profiles.active=prod
 ```
 
-이 경우에 application.properties의 spring.profiles.active=test로 해놓고 패키징을 해도, java -jar를 통해서arg로 넘기는 경우 오버라이딩이 되서, prod 프로파일이 적용됨을 알 수 있다. 
+이 경우에 application.properties의 spring.profiles.active=test로 해놓고 패키징을 해도, [Java] jar를 통해서arg로 넘기는 경우 오버라이딩이 되서, prod 프로파일이 적용됨을 알 수 있다. 
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[JPA] projection 살펴보기"
+title: "[JPA] 엔티티 일부 데이터만 조회하는 Projection"
 categories: JPA
 date: 2019-04-12 09:08:56
 redirect_from: 

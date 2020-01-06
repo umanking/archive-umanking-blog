@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 개발자의 생산성
+title: "[생각] 개발자의 생산성"
 date: 2019-12-26 23:14 +0900
 categories: [개발이야기]
 ---

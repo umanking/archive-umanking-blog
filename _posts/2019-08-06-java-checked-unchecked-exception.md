@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java Exception
+title: "[Java] Exception"
 category:
   - Java
 date: 2019-08-06 11:07:14

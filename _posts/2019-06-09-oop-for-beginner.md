@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 객체 지향 프로그래밍 입문(인프런)
+title: "[학습] 객체 지향 프로그래밍 입문 정리"
 categories: 학습
 date: 2019-06-09 20:03:53
 redirect_from: 

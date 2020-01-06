@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 백앤드 개발자가 읽어야 하는 책 목록
+title: "[학습] 백엔드 개발자 독서 목록"
 date: 2019-11-16 13:33 +0900
 categories: [학습]
 redirect_from: 

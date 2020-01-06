@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "java.io.tmpdir 경로가 존재하지 않을 때"
+title: "[Java] java.io.tmpdir 경로가 존재하지 않을 때"
 date: 2020-01-01 14:15 +0900
 categories: [Java]
 ---

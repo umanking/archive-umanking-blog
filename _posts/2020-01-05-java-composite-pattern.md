@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "디자인패턴 - Composite 패턴"
+title: "[DesignPattern] Composite 패턴"
 date: 2020-01-05 14:02 +0900
 categories: [Java]
 ---

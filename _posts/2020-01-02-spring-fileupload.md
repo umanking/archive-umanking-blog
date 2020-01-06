@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spring MultipartFile 파일 업로드"
+title: "[Spring] MultipartFile을 이용한 파일 업로드"
 date: 2020-01-02 23:42 +0900
 categories: [Spring]
 ---

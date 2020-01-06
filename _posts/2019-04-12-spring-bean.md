@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Spring] bean 등록"
+title: "[Spring] Bean 등록"
 date: 2019-04-12 09:09:47
 category: 
  

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[SpringBoot] @SpringBootAppllication 설명"
+title: "[Spring] @SpringBootAppllication 설명"
 date: 2019-04-12 09:11:00
 category: 
 - Spring

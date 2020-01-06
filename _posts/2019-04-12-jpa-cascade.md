@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[JPA] cascade 옵션 살펴보기"
+title: "[JPA] Casecade 옵션"
 categories: JPA
 redirect_from: 
 - 2019/04/12/jpa-cascade/

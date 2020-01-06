@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java - ThreadLocal
+title: "[Java] ThreadLocal"
 category:
   - Java
 date: 2019-07-26 11:58:39

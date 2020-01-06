@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SpringBoot Validation(JSR-303)
+title: "[Spring] 모델 검증(validation)"
 date: 2019-12-12 21:19 +0900
 categories: [Spring]
 redirect_from: 

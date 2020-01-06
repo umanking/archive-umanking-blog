@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 롬복 boolean 필드 정의 (@Getter)
+title: "[Lombok] boolean 필드"
 date: 2019-12-12 22:59 +0900
 categories: [Library]
 redirect_from: 

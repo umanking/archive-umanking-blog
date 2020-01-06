@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[SpringBoot] SpringApplication를 통한 코딩"
+title: "[Spring] SpringApplication를 통한 코딩"
 date: 2019-04-12 09:11:51
 category: 
  
@@ -10,9 +10,7 @@ tags:
 redirect_from: 
 - 2019/04/12/spring-springapplication/
 ---
-# SpringBoot - SpringApplication ( applicationContext 등록 이전의 이벤트 Listener 등록 하기)
-
-
+## SpringBoot - SpringApplication ( applicationContext 등록 이전의 이벤트 Listener 등록 하기)
 
 > applicationContext가 등록되기 전에 발생한 이벤트를 Listen하는 리스너를 등록하려면 어떻게 해야할까? 
 

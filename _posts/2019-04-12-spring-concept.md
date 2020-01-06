@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[SpringBoot] 기본원리"
+title: "[Spring] 스프링 부트 특징 3가지"
 date: 2019-04-12 09:11:26
 category: 
  

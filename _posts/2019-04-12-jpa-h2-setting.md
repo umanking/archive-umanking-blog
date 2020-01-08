@@ -76,7 +76,7 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
 JpaRepository(인터페이스)를 상속받음으로써 Jpa가 구현해 놓은 구현체 중에서 [`SimpleJpaRepository`](https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/support/SimpleJpaRepository.html)를 사용한다. 해당 클래스는 기본적인 CRUD 메서드를 이미 구현했기 때문에 그대로 사용하면 매우 편리하다.
 
 
-```
+```properties
 ## Hibernate
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true

@@ -1,84 +1,48 @@
 ---
 layout: post
-title: "[JPA] H2 데이터베이스 세팅"
+title: "SpringBoot, JPA, H2 database 셋팅"
 categories: JPA
 redirect_from: 
 - 2019/04/12/jpa-h2-setting/
 date: 2019-04-12 09:05:02
 ---
-# 1\. 들어가며
+## 목표
+이번 시간에는 SpringBoot, JPA, H2(DB)를 통한 간단한 Member 엔티티를 만들고, Junit 테스트로 검증하는 샘플 프로젝트에 대해서 알아보도록 하겠습니다.
 
-Spring Boot, JPA, H2 db로 프로젝트를 구성하고, 간단한 Member엔티티를 만들고, 테스트 케이스로 검증하는 튜토리얼
-
-# 2\. 예제 코드
-
-## Dependecy 추가
+## 예제 코드
 
 ```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-data-jpa</artifactId>
 </dependency>
-
 <dependency>
     <groupId>com.h2database</groupId>
     <artifactId>h2</artifactId>
-    <scope>test</scope>
+    <scope>runtime</scope>
 </dependency>
+
 ```
+`spring-data-jpa` 와 `h2(인메모리)` 디펜던시를 추가합니다.
 
-스프링 부트 프로젝트에서 해당 라이브러리 등록하고 애플리케이션을 띄우면
+## application.properties 추가
 
-```js
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-```
-
-DataSource: url 속성을 찾지 못한다는 메세지가 뜹니다. `h2 application properties` 구글에서 검색해서 `application.properties` 에 다음과 같이 설정합니다.
-
-## Datasource Properties 추가
-
-```java
-# H2
+```properties
+# H2 설정
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2
-# Datasource
+
+# Datasource 설정
 spring.datasource.driver-class-name=org.h2.Driver
 spring.datasource.url=jdbc:h2:mem:test
 spring.datasource.username=sa
 spring.datasource.password=
 ```
 
-다시 애플리케이션을 띄우면
+애플리케이션을 실행하고, `localhost:8080/h2` 주소로 접속하면, 인메모리 DB인 H2 데이터베이스를 사용할 수 있습니다. 물론 인메모리 이기 때문에 애플리케이션을 재 실행하면 데이터가 날라갑니다.(휘발성 ~ )
 
-```
-Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.h2.Driver
-```
 
-드라이버를 로드할 수 없다는 메세지가 뜹니다. 눈치 채셨나요? 우리가 처음에 dependency를 추가할 때, H2 Database 스코프를 Test로 두었기 때문에 RunTime에 해당 Driver를 로드 할 수 없는 것입니다.
-
-```xml
-<dependency>
-    <groupId>com.h2database</groupId>
-    <artifactId>h2</artifactId>
-    <!-- <scope>test</scope> -->  //이 부분을 주석으로 달거나, runtime으로 바꿔 줍니다.
-</dependency>
-```
-
-물론 H2 Database를 테스트하는 경우에만 사용하는 경우에는 스코프를 test로 해줍니다. 이제 다시 애플리케이션을 띄웁니다.  
-잘 뜹니다!
-
-`localhost:8080/h2` 주소로 접속.
-
-## Member Entity, Repository
-
+## Member 엔티티
 ```java
 @Data
 @Table(name = "MEMBER")
@@ -169,7 +133,11 @@ Hibernate:
 
 처음에 member테이블이 존재하면 테이블을 삭제하고 다시 만드는 쿼리가 발생한다. 신기한게 application.properties에 `spring.jpa.hibernate.ddl-auto=create-drop` 이런 옵션을 주지 않았음에도 H2 db특성상(인메모리) 기존의 테이블을 전부 날리고 다시 생성하는 가 보다?
 
-```js
+> 2020년 1/9 note, 
+
+> Spring Boot chooses a default value for you based on whether it thinks your database is embedded (default create-drop) or not (default none).
+
+```
 Hibernate:
     insert
     into
@@ -186,12 +154,11 @@ Hibernate:
         member member0_
     where
         member0_.id=?
-
 ```
 
-쿼리를 확인해 보면, 1) 등록 쿼리, 2) 조회 쿼리 두개가 발생하는 것을 알 수 있다.
+쿼리를 확인해 보면, 1) 등록 쿼리, 2) 조회 쿼리 두개가 발생하는 것을 알 수 있습니다.
 
-```js
+```
 java.lang.AssertionError:
 Expected :32
 Actual   :33

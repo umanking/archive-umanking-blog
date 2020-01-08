@@ -17,7 +17,6 @@ categories: [Java]
 [원문 링크](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html) 영어가 편하신 분들은 직접 읽는게 훨씬 좋을 것 같습니다.
 
 
-
 # Hotspot 아키텍쳐
 
 Hotspot JVM 프로세스는 하나의 아키텍쳐 입니다. 높은 퍼포먼스와 대량의 확장성을 지원하는 특징을 가지고 있습니다.

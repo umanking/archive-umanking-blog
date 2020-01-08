@@ -9,7 +9,7 @@ date: 2019-04-12 09:05:02
 ## 목표
 이번 시간에는 SpringBoot, JPA, H2(DB)를 통한 간단한 Member 엔티티를 만들고, Junit 테스트로 검증하는 샘플 프로젝트에 대해서 알아보도록 하겠습니다.
 
-## 예제 코드
+## 의존성 추가
 
 ```xml
 <dependency>
@@ -52,35 +52,38 @@ public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     @Column(name = "NAME")
     private String name;
+    
     @Column(name = "AGE")
     private Integer age;
+
 }
 ```
 
-코드의 가독성을 위해서 Lombok을 사용 `@Data` 는 `@Getter`, `@Setter`, `@AllArgsConstructor`, `@ToString`, 등등 엄청 많은 것들을 커버하기 때문에 실무에서는 저렇게 사용하지 않음.
+- `@Entity`는 Member 클래스가 엔티티임을 명시함
+- `@Table`은 Member 엔티티와 매핑할 테이블명을 지정한다.(클래스명과 정확히 일치한다면 굳이 명시 하지 않아도 된다.)
+- `@Id`는 Persiscontext에서 식별할 수 있는 값을 나타낸다.(반드시 유니크 한 값)
+- `@GeneratedValue`는 Id가 생성되는 전략을 나타내는데, 기본 전략은 AUTO로 설정되어 있기 때문에 각각 다른 Database의 Id 생성 전략을 유연하게 대응 할 수 있다. 예를 들어 Oracle은 Sequence라는 개념이 들어가지만, Mysql, Mariadb에서는 그렇지 않다.
 
-- @Entity는 Member 클래스가 엔티티임을 명시함
-- @Table은 Member 엔티티와 매핑할 테이블을 나타낸다.
-- @Id는 Persiscontext에서 식별할 수 있는 값이 필요하기 때문에 나타냄
-- @GeneratedValue는 Id가 생성되는 전략을 나타내는데, 기본 전략은 AUTO로 설정되어 있기 때문에 각각 다른 Database의 Id 생성 전략을 유연하게 대응 할 수 있다. 예를 들어 Oracle은 Sequence라는 개념이 들어가지만, Mysql, Mariadb에서는 그렇지 않다.
-
+## JpaRepository 를 상속 받는다.
 ```java
 @Repository
 public interface MemberRepository extends JpaRepository<Member, Long> {
 }
 ```
+JpaRepository(인터페이스)를 상속받음으로써 Jpa가 구현해 놓은 구현체 중에서 [`SimpleJpaRepository`](https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/support/SimpleJpaRepository.html)를 사용한다. 해당 클래스는 기본적인 CRUD 메서드를 이미 구현했기 때문에 그대로 사용하면 매우 편리하다.
 
-기본적인 CRUD 만을 할 것이기 때문에, Service 레이어를 만들지 않고 바로 Repository를 인터페이스로 만들었다. JpaRepository(인터페이스)를 상속받음으로써 Jpa가 구현해 놓은 CRUD를 바로 사용할 수 있다.
-
-실제 테스트 케이스를 작성하기 전에, DB가 만들어 지고, SQL 포맷팅을 하는 properties를 추가한다.
 
 ```
 ## Hibernate
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 ```
+추가적으로 `application.properties`에 쿼리가 날라갈 때, console에 formatting된 sql문을 보기 위해서 설정을 추가한다.
+
+## 테스트 케이스 작성
 
 ```java
 @RunWith(SpringRunner.class)
@@ -105,7 +108,7 @@ public class MemberServiceTests {
 
         // then
         Assert.assertEquals(retrivedMember.getName(), "andrew");
-        Assert.assertEquals(retrivedMember.getAge(), Integer.valueOf(33));
+        Assert.assertEquals(retrivedMember.getAge(), Integer.valueOf(32));
     }
 ```
 
@@ -115,7 +118,8 @@ public class MemberServiceTests {
 - @Rollback(false) - 우리는 H2 DB이기 때문에 크게 상관이 없지만, 실제 물리적인 테스트용 데이터베이스를 구축하고 테스트 하는 경우에, 매 테스트마다 DataBase가 오염 되지 않기를 바랄 수도 있고, 실제 테스트 결과를 DB에 쌓음으로써 확인하고 싶은 경우도 있기 때문에 해당 옵션을 통해서 제어 할 수 있음
 - 테스트 케이스 작성 요령이 많겠지만, 기본 적으로 given, when, then을 통해서 어떤 상황이 주어지고(given), 언제 그 상황을 가지고오고(when) 그리고 그 결과를 비교한다(then)의 주석을 달아주면 가독성이 좋음
 
-```js
+
+```
 Hibernate:
     drop table member if exists
 Hibernate:
@@ -131,9 +135,9 @@ Hibernate:
     )
 ```
 
-처음에 member테이블이 존재하면 테이블을 삭제하고 다시 만드는 쿼리가 발생한다. 신기한게 application.properties에 `spring.jpa.hibernate.ddl-auto=create-drop` 이런 옵션을 주지 않았음에도 H2 db특성상(인메모리) 기존의 테이블을 전부 날리고 다시 생성하는 가 보다?
+처음에 member테이블이 존재하면 테이블을 삭제하고 다시 만드는 쿼리가 발생한다. 신기한게 application.properties에 `spring.jpa.hibernate.ddl-auto=create-drop` ~~이런 옵션을 주지 않았음에도 H2 db특성상(인메모리) 기존의 테이블을 전부 날리고 다시 생성하는 가 보다?~~
 
-> 2020년 1/9 note, 
+> 2020-01-09 추가 설명, 
 
 > Spring Boot chooses a default value for you based on whether it thinks your database is embedded (default create-drop) or not (default none).
 
@@ -157,12 +161,3 @@ Hibernate:
 ```
 
 쿼리를 확인해 보면, 1) 등록 쿼리, 2) 조회 쿼리 두개가 발생하는 것을 알 수 있습니다.
-
-```
-java.lang.AssertionError:
-Expected :32
-Actual   :33
- <Click to see difference>
-```
-
-위의 테스트 결과는 실패 한다. 나이 값을 잘 못 넣었기 때문에, 성공만 하는 테스트 케이스보다 일부러 실패하는 테스트 케이스를 작성하는 게 좋다.

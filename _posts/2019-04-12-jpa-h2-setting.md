@@ -73,7 +73,7 @@ public class Member {
 public interface MemberRepository extends JpaRepository<Member, Long> {
 }
 ```
-JpaRepository(인터페이스)를 상속받음으로써 Jpa가 구현해 놓은 구현체 중에서 [`SimpleJpaRepository`](https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/support/SimpleJpaRepository.html)를 사용한다. 해당 클래스는 기본적인 CRUD 메서드를 이미 구현했기 때문에 그대로 사용하면 매우 편리하다.
+JpaRepository(인터페이스)를 상속받음으로써 Jpa가 구현해 놓은 구현체 중에서 [`SimpleJpaRepository`](https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/support/SimpleJpaRepository.html)를 사용한다. 해당 클래스는 기본적인 CRUD 메서드를 이미 구현했기 때문에 그대로 사용하면 매우 편리합니다.
 
 
 ```properties
@@ -81,7 +81,7 @@ JpaRepository(인터페이스)를 상속받음으로써 Jpa가 구현해 놓은 
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 ```
-추가적으로 `application.properties`에 쿼리가 날라갈 때, console에 formatting된 sql문을 보기 위해서 설정을 추가한다.
+추가적으로 `application.properties`에 쿼리가 날라갈 때, console에 formatting된 sql문을 보기 위해서 설정을 추가합니다.
 
 ## 테스트 케이스 작성
 

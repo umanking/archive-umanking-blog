@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Java Garbage Collection - #1 JVM HotSpot"
+title: "Garbage Collection - #1부 JVM HotSpot"
 date: 2020-01-08 21:33 +0900
 categories: [Java]
 ---

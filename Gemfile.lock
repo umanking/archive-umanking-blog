@@ -88,6 +88,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-last-modified-at
   jekyll-redirect-from
+  jekyll-seo-tag
   jekyll-sitemap
   minima (~> 2.5)
   tzinfo (~> 1.2)

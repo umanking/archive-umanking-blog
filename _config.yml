@@ -37,6 +37,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-last-modified-at
+  - jekyll-seo-tag
+
 whitelist:
   - jekyll-redirect-from
 

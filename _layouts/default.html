@@ -10,12 +10,11 @@
 
       gtag('config', 'UA-130245279-5');
     </script>
+
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="naver-site-verification" content="b659a30674ad44210dfcace94f379d9f5fe48f25"/>
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/main.css">
-    <!-- <link rel="stylesheet" href="/assets/css/syntax.css"> -->
-    <!-- <link rel="stylesheet" href="/assets/main.css.map"> -->
     <link rel="stylesheet" href="/assets/minima-social-icons.svg">
     <link href="https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css" rel="stylesheet" type="text/css">
     <!-- <link href="/assets/css/d2coding.css" rel="stylesheet" type="text/css"> -->
@@ -47,6 +46,7 @@
     </header>
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+          {% include ad.html %}
           {{ content }}
           {% include ad.html %}
       </div>

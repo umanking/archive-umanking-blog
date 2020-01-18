@@ -42,7 +42,7 @@ pom.xml 파일에 web, lombok외에 spring-data-jpa, h2 모듈을 추가했습�
 </dependency>
 ```
 
-# 3. application.properties 설정
+# application.properties 설정
 ```properties
 spring.jpa.hibernate.ddl-auto=create-drop
 spring.jpa.show-sql=true

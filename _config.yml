@@ -18,12 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 앤드류 개발 블로그
+title: Andrew's Dev Story
 email: umanking@gmail.com
-description:
-  - 소프트웨어 엔지니어로 주로 Java, Spring, JPA(ORM)를 다루고 있습니다. 
-  - 클린 코드, 클린 아키텍쳐, 디자인 패턴을 통한 '읽기 좋은 코드를'를 짜는 것을 목표로 하고 있습니다.
-  - 기술 자체의 스택을 쌓기 보다는, 깊이를 더해가는 개발자가 되는 것을 목표로 하고 있습니다.
+description: "Java, Spring BackEnd Developer Blog"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://umanking.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: umanking87

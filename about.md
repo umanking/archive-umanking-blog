@@ -1,18 +1,17 @@
 ---
 layout: page
-title: 자기소개
+title: Introduce MySelf
 permalink: /about/
 ---
-### 저요? 🙆‍
-- 개발하면서 생계를 유지하는 사람. 
-- 물리학을 전공한 비 전공자 백엔드 주니어(?) 개발자
+### Me?
+- BackEnd Developer
+- Java, Spring, JPA(ORM) 
 
-### 성격은? 🤔
-- 전체가 그림이 그려지지 않으면 이해가 잘 되지 않는 성격입니다. 
-- 꼼꼼한 부분이 있는 것도 있으나, 덜렁거림이 있어서 잘 인지하고 있습니다. 
+### What I Like
+- Architecture, Flow Chart 
+- Read Spring Framework Code (to learn Design Pattern)
+- Read Tech Blog and summary
 
-### Main Job? 💻
-- 주로 Java, Spring, JPA을 다루고 ▶︎ 아키텍쳐, 디자인패턴, 클린코드, 리팩토링, SQL 설계를 지향해 나가고 있습니다. (찐 벡엔드 개발자 되기)
-
-### 궁금한게 있는 사람은 Email 💌 보내주세요! 
-- contact: <umanking@gmail.com>
+### Contact
+- Email: <umanking@gmail.com>
+- Github: [umanking](https://github.com/umanking)

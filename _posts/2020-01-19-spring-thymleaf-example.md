@@ -6,7 +6,7 @@ categories: [spring]
 tags: [spring, thymeleaf]
 ---
 
-> 모든 소스코드는 **[여기](https://github.com/umanking/blog-code-workspace)🍎**에서 확인 가능합니다.  
+> 모든 소스코드는 **[여기](https://github.com/umanking/blog-code-workspace)**에서 확인 가능합니다.  
 > 잘못된 정보나 기술적 피드백은 적극 환영합니다.🙆‍♂️
 
 오늘은 저번시간에 다룬 간단한 [Spring, Thymleaf로 예제](https://umanking.github.io/spring/spring-thymeleaf/)를 중심으로 실무에서 자주 사용하는 Thymeleaf를 알아보도록 하겠습니다. 

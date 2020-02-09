@@ -49,14 +49,14 @@ blockquote > :last-child { margin-bottom: 0; }
 /* #eef */
 /* #3A404E */
 pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef;
-  font-family: D2Coding ligature, monosapce;
+  font-family: D2Coding, monosapce;
  }
 
-code { padding: 1px 5px; font-family: D2Coding ligature, monosapce;}
+code { padding: 1px 5px; font-family: D2Coding, monosapce;}
 
-pre { padding: 8px 12px; overflow-x: auto; font-family: D2Coding ligature, monosapce;}
+pre { padding: 8px 12px; overflow-x: auto; font-family: D2Coding, monosapce;}
 
-pre > code { border: 0; padding-right: 0; padding-left: 0; font-family: D2Coding ligature, monosapce;}
+pre > code { border: 0; padding-right: 0; padding-left: 0; font-family: D2Coding, monosapce;}
 
 /** Wrapper */
 .wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }

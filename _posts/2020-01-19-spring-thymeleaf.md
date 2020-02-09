@@ -6,7 +6,7 @@ categories: [spring]
 tags: [spring]
 ---
 
-> 모든 소스코드는 **[여기](https://github.com/umanking/blog-code-workspace)🍎**에서 확인 가능합니다.  
+> 모든 소스코드는 **[여기](https://github.com/umanking/blog-code-workspace)**에서 확인 가능합니다.  
 > 잘못된 정보나 기술적 피드백은 적극 환영합니다.🙆‍♂️
 
 Thymleaf를 통한 Item 목록을 화면에 렌더링 하는 방법에 대해서 알아보자.  

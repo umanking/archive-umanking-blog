@@ -41,7 +41,7 @@ a:hover { color: #111; text-decoration: underline; }
 .social-media-list a:hover .username { text-decoration: underline; }
 
 /** Blockquotes */
-blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: 0px; font-family: D2Coding, monosapce;}
+blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 16px; letter-spacing: 0px; font-family: D2Coding, monosapce;}
 
 blockquote > :last-child { margin-bottom: 0; }
 

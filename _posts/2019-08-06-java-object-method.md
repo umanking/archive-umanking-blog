@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "[Java]  wait와 notify메서드"
-category:
-  - Java
+categoires: [java]
 date: 2019-08-06 17:31:34
 tags: 
 - Java

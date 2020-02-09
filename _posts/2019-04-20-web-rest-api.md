@@ -2,11 +2,8 @@
 layout: post
 title: RESTful API 가이드
 date: 2019-04-20 20:46:14
-category:
- 
-- Web
-tag: 
-- Web
+categories: [web]
+tags: [web]
 redirect_from: 
 - 2019/04/20/web-rest-api/
 ---

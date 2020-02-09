@@ -2,11 +2,8 @@
 layout: post
 title: "[Spring] DispatcherServlet에 대해서 알아보자"
 date: 2019-04-21 12:30:30
-category: 
- 
-- Spring
-tags: 
-- Spring
+categories: [spring]
+tags: [spring]
 redirect_from: 
 - 2019/04/21/spring-mvc-dispatcher-servlet/
 ---

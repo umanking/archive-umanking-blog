@@ -2,7 +2,8 @@
 layout: post
 title: ". spring-redirect-attribute"
 date: 2020-01-11 00:09 +0900
-categories: [Spring]
+categories: [spring]
+tags: [spring]
 ---
 # RedirectAttribute 에 대해서 알아 보겠습니다.
 이번 시간에는 Spring MVC 에서 특정 페이지로 `redirect`를 보낼 때 임시적으로 값을 저장할 수 있는 RedirectAttribute에 대해서 알아 보겠습니다.

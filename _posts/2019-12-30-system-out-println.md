@@ -2,7 +2,8 @@
 layout: post
 title: "[Java] System.out.println을 사용하면 안되는 이유"
 date: 2019-12-30 20:43 +0900
-categories: [Java]
+categories: [java]
+tags: [java]
 ---
 # 개요
 흔히 자바에서 간단하게 로그를 찍을 때, System.out.println()을 사용한다. 하지만 실제 운영상의 소스 코드로 배포를 할 때는 Sysout보다는 로깅 프레임워크를 사용한다. 아주 당연하게.

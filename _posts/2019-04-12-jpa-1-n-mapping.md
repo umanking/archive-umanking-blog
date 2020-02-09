@@ -4,10 +4,8 @@ title: "[JPA] 1:N 매핑"
 date: 2019-04-12 09:05:25
 redirect_from: 
 - 2019/04/12/jpa-1-n-mapping/
-category: 
-- JPA
-tags: 
-- JPA
+category: [jpa]
+tags: [jpa]
 ---
 
 # 1.들어가며

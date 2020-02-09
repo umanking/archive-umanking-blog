@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "[Java] Reflection 예제"
-categories:
-- Java
-tags:
-  - Java
+categories: [java]
+tags: [java]
 date: 2019-08-24 23:36:46
 redirect_from: 
 - 2019/08/24/java-reflection/

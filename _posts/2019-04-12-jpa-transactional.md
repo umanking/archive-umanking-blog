@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "[JPA] transactional 살펴보기"
-categories: JPA
+categories: [jpa]
+tags: [jpa]
 date: 2019-04-12 09:09:13
 redirect_from: 
 - 2019/04/12/jpa-transactional/

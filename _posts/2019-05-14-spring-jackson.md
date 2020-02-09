@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "Jackson 어노테이션 사용"
-category: 
-- Spring
 date: 2019-05-14 22:30:23
-tags: 
-- Spring
+category: [spring]
+tags: [spring]
 
 redirect_from: 
 - 2019/05/14/spring-jackson/

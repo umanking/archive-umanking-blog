@@ -2,11 +2,8 @@
 layout: post
 title: "[Spring] MVC 만들어 보기"
 date: 2019-04-17 09:21:01
-category: 
- 
-- Spring
-tags: 
-- Spring
+categories: [spring]
+tags: [spring]
 redirect_from: 
 - 2019/04/17/spring-mvc-introduce-1/
 ---

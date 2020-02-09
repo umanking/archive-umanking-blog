@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "[학습] 객체 지향 프로그래밍 입문 정리"
-categories: 학습
 date: 2019-06-09 20:03:53
+categories: [oop]
+tags: [oop]
 redirect_from: 
 - 2019/06/09/oop-for-beginner/
 ---

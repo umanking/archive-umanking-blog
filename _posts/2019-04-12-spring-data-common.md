@@ -2,11 +2,8 @@
 layout: post
 title: "[Spring] Spring Data Common 프로젝트 살펴보기"
 date: 2019-04-12 09:03:09
-category: 
- 
-- Spring
-tags: 
-- Spring
+categories: [spring]
+tags: [spring]
 redirect_from: 
 - 2019/04/12/spring-data-common/
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "[Java] Exception"
-category:
-  - Java
+categoires: [java]
 date: 2019-08-06 11:07:14
 tags: 
 - Java

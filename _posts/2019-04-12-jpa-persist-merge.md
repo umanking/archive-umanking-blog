@@ -2,7 +2,8 @@
 layout: post
 title: "[JPA] save()메서드로 살펴보는 persist와 merge 개념"
 date: 2019-04-12 09:08:33
-category: JPA
+category: [jpa]
+tags: [jpa]
 redirect_from: 
 - 2019/04/12/jpa-persist-merge/
 ---

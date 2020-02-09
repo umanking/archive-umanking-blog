@@ -2,7 +2,8 @@
 layout: post
 title: "Garbage Collection - #2부 GC에 대한 설명"
 date: 2020-01-09 20:22 +0900
-categories: [Java]
+categories: [java]
+tags: [java]
 ---
 
 ## 목표

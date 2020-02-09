@@ -1,12 +1,9 @@
 ---
 layout: post
 title: "[Spring]HandlerMethodArgumentResolver 인터페이스"
-category:
-   
-  - Spring
 date: 2019-07-25 19:08:12
-tags: 
-- Spring
+categories: [spring]
+tags: [spring]
 redirect_from: 
 - 2019/07/25/spring-handlerMethodArgumentResolver/
 ---

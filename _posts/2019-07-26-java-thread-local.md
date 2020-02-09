@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "[Java] ThreadLocal"
-category:
-  - Java
+categoires: [java]
 date: 2019-07-26 11:58:39
 tags: 
 - Java

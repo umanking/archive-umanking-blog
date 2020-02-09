@@ -2,11 +2,8 @@
 layout: post
 title: "[Spring] 메세지 컨버터"
 date: 2019-04-13 22:07:05
-category: 
- 
-- Spring
-tags: 
-- Spring
+categories: [spring]
+tags: [spring]
 redirect_from: 
 - 2019/04/13/spring-mvc-messageconverter/
 ---

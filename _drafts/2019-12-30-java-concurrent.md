@@ -2,7 +2,8 @@
 layout: post
 title: Java 동시성 프로그래밍
 date: 2019-12-30 23:06 +0900
-categories: [Java]
+categories: [java]
+tags: [java]
 ---
 
 java는 처음 만들어질 때부터 cocurrent(동시성) 프로그래밍을 지원했다. java 5버전 이후로 부터 high level concurrent api를 제공한다.

@@ -2,7 +2,8 @@
 layout: post
 title: "[디자인패턴] 커맨드 패턴 (Command Pattern)"
 date: 2020-01-12 13:25 +0900
-categories: [Java]
+categories: [java]
+tags: [java]
 ---
 ## 개요
 이번 시간에는 **기능을 캡슐화** 하는 커맨드 패턴에 대해서 알아 보겠습니다.

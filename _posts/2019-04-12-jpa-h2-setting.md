@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "SpringBoot, JPA, H2 database 셋팅"
-categories: JPA
+categories: [jpa]
+tags: [jpa]
 redirect_from: 
 - 2019/04/12/jpa-h2-setting/
 date: 2019-04-12 09:05:02

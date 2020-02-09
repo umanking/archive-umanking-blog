@@ -293,8 +293,8 @@ table td { border: 1px solid #e8e8e8; }
   font-family: "Gidole-Regular";
     src: url( './fonts/Gidole-Regular.ttf') format( 'truetype');
 } */
-/* 
-@font-face {
+
+/* @font-face {
   font-family: 'D2 coding';
   font-style: normal;
   font-weight: 400;

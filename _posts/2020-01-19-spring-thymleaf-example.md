@@ -6,16 +6,17 @@ categories: [spring]
 tags: [spring, thymeleaf]
 ---
 
-# 개요
-오늘은 저번시간에 다룬 간단한 [Spring, Thymleaf로 예제](https://umanking.github.io/spring/spring-thymeleaf/)를 중심으로 실무에서 자주 사용하는 Thymeleaf를 알아보도록 하겠습니다. 
-[소스코드는](https://github.com/umanking/spring-workspace/tree/master/spring-thymleaf)이곳 에서 확인 가능 합니다.
+> 모든 소스코드는 **[여기](https://github.com/umanking/blog-code-workspace)🍎**에서 확인 가능합니다.  
+> 잘못된 정보나 기술적 피드백은 적극 환영합니다.🙆‍♂️
 
-## th:text, th:value
+오늘은 저번시간에 다룬 간단한 [Spring, Thymleaf로 예제](https://umanking.github.io/spring/spring-thymeleaf/)를 중심으로 실무에서 자주 사용하는 Thymeleaf를 알아보도록 하겠습니다. 
+
+## 1. 값 자체, Value를 화면에 렌더링 - `th:text`, `th:value`
 ```html
 <div th:text="${message}"></div>
 ```
 모델에 데이터를 담고, 화면에 뿌릴때, 가장 많이 사용하는 `th:text`과 `th:value` 
-## th:each 
+## 2. Collection 정보 렌더링 - `th:each `
 ```html
 <tr th:each="item, iter:${items}">
     <td th:text="${item.name}" th:value="${iter.index}">이름값이 없습니다.</td>
@@ -26,7 +27,7 @@ tags: [spring, thymeleaf]
 items 라는 list를 받아서, item 각각의 정보를 text로 화면에 뿌립니다. 종종 index정보가 필요한 경우가 있습니다.
 iter를 통해서 index정보도 얻을 수 있습니다. 
 
-## th:if, th:unless
+## 3. 조건을 주고 싶을 때 - `th:if`, `th:unless`
 
 ```html
 <!--if else -->
@@ -39,7 +40,7 @@ iter를 통해서 index정보도 얻을 수 있습니다.
 ```
 `th:if` 나 `th:unless` 를 통해서 if else를 나타낼 수 있습니다.
 
-## th:switch
+## 4. 여러개의 Stuat 값으로 정의된 경우 - `th:switch`
 ```html
 <!--switch case-->
 <th:block th:switch="${itemStatus}">
@@ -50,7 +51,7 @@ iter를 통해서 index정보도 얻을 수 있습니다.
 ```
 `th:switch` 로 switch case 구문도 나타낼 수 있습니다. 
 
-## th:object 객체의 attribute에 접근하기
+## 5. 객체를 분할? - `th:object` 객체의 attribute에 접근하기
 ```html
 <div th:object="${userInfo.user}">
     <div th:text="*{firstName}"></div>
@@ -67,7 +68,7 @@ userInfo 객체 안에 user 객체의 attribute에 접근할 때는 다음과 �
 위에랑 정확히 동일한 표현 방법입니다.
 
 
-## 계산식
+## 6. 내장된 함수 사용하기 - 계산식
 ### 1. numbers.sequence
 ```html
 <ul th:each="num: ${#numbers.sequence(1,5)}">
@@ -97,4 +98,4 @@ sequential 하게 숫자를 만들고 싶으면, 다음과 같이 #numbers라는
 
 
 ## 정리 
-오늘은 view template engine인 Thymeleaf 기본적으로 실무에서 많이? 자주 사용하는 것들에 대해서 알아보았습니다. 
+오늘은 view template engine인 Thymeleaf 기본적으로 실무에서 많이? 자주 사용하는 것들에 대해서 알아보았습니다.

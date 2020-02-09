@@ -6,8 +6,11 @@ categories: [spring]
 tags: [spring]
 ---
 
-Thymleaf를 통한 Item 목록을 화면에 렌더링 하는 방법에 대해서 알아보자.([소스코드](https://github.com/umanking/blog-code-workspace))
-> [thymleaf](https://en.wikipedia.org/wiki/Thymeleaf)는 template view 엔진으로써 Spring MVC에서 모델에 담은 데이터 정보를 View단에 렌더링(뿌리는) 역할을 한다.
+> 모든 소스코드는 **[여기](https://github.com/umanking/blog-code-workspace)🍎**에서 확인 가능합니다.  
+> 잘못된 정보나 기술적 피드백은 적극 환영합니다.🙆‍♂️
+
+Thymleaf를 통한 Item 목록을 화면에 렌더링 하는 방법에 대해서 알아보자.  
+[thymleaf](https://en.wikipedia.org/wiki/Thymeleaf)는 template view 엔진으로써 Spring MVC에서 모델에 담은 데이터 정보를 View단에 렌더링(뿌리는) 역할을 한다.
 
 ## 1. Item 클래스 정의
 ```java
@@ -83,5 +86,5 @@ public class ItemController {
 프로젝트를 실행하고 `localhost:8080/item`를 호출하면 Model에 담은 데이터 정보가 화면에 제대로 뿌려진다.
 
 
-## 요약
+## 정리
 오늘은 간단한 thymleaf를 통한 아이템을 화면에 뿌리는 방법에 대해서 알아보았습니다. 이 외에도 자주 사용하는 thymeleaf 태그(?)들과 html내 파일에서 자바스크립트를 활용한 이벤트들을 다루는 방법은 추후에 포스팅 하도록 하겠습니다.

@@ -46,15 +46,17 @@ blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px;
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
+/* #eef */
+/* #3A404E */
 pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef;
-  font-family: D2Coding, 'D2 coding', monosapce;
+  font-family: D2Coding ligature, monosapce;
  }
 
-code { padding: 1px 5px; font-family: D2Coding, 'D2 coding', monosapce;}
+code { padding: 1px 5px; font-family: D2Coding ligature, monosapce;}
 
-pre { padding: 8px 12px; overflow-x: auto; font-family: D2Coding, 'D2 coding', monosapce;}
+pre { padding: 8px 12px; overflow-x: auto; font-family: D2Coding ligature, monosapce;}
 
-pre > code { border: 0; padding-right: 0; padding-left: 0; font-family: D2Coding, 'D2 coding', monosapce;}
+pre > code { border: 0; padding-right: 0; padding-left: 0; font-family: D2Coding ligature, monosapce;}
 
 /** Wrapper */
 .wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
@@ -291,7 +293,7 @@ table td { border: 1px solid #e8e8e8; }
   font-family: "Gidole-Regular";
     src: url( './fonts/Gidole-Regular.ttf') format( 'truetype');
 } */
-
+/* 
 @font-face {
   font-family: 'D2 coding';
   font-style: normal;
@@ -315,10 +317,10 @@ table td { border: 1px solid #e8e8e8; }
        url('D2CodingBold.woff') format('woff'),
        url('D2CodingBold.ttf') format('truetype'),
        url('D2CodingBold.svg') format('svg');
-}
+} */
 
 @import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 .nanumgothiccoding * {
-  font-family: 'Nanum Gothic Coding', monospace;
+  font-family: 'Nanum Gothic Coding';
  }
 /*# sourceMappingURL=main.css.map */

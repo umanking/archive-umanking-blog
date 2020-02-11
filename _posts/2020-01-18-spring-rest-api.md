@@ -2,7 +2,7 @@
 layout: post
 title: "Spring, JPA를 이용한 REST API 만들기"
 date: 2020-01-18 10:33 +0900
-categories: [spring]
+categories: [Spring]
 tags: [spring]
 ---
 > 모든 소스코드는 **[여기](https://github.com/umanking/blog-code-workspace)**에서 확인 가능합니다.  

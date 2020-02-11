@@ -2,7 +2,7 @@
 layout: post
 title: "[Spring] Profile 설정하기"
 date: 2019-04-13 22:02:17
-categories: [spring]
+categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/04/13/spring-profile/

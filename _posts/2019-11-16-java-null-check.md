@@ -2,7 +2,7 @@
 layout: post
 title: "[Java] 널 체크(사내 세미나 자료)"
 date: 2019-11-16 12:26 +0900
-categories: [java]
+categories: [Java]
 tags: [java]
 redirect_from: 
 - 2019/11/16/java-null-check/

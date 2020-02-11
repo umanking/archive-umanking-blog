@@ -2,7 +2,7 @@
 layout: post
 title: "[생각] 개발자의 생산성"
 date: 2019-12-26 23:14 +0900
-categories: [think]
+categories: [Think]
 tags: [think]
 ---
 > 오늘은 개발자의 생산성은 어떤 것들이 존재하고, 실제 업무에서는 어떤 것들을 주로 사용하는 지에 대해서 알아 보자

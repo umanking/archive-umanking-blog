@@ -2,7 +2,7 @@
 layout: post
 title: "[학습] Spring interview questions"
 date: 2019-11-21 12:36 +0900
-categories: [spring]
+categories: [Spring]
 tags: []
 redirect_from: 
 - 2019/11/21/spring-interview-question/

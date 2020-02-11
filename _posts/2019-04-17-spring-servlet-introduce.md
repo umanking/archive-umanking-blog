@@ -2,7 +2,7 @@
 layout: post
 title: "[Spring] 서블릿에 대해서 알아보자"
 date: 2019-04-17 09:37:42
-categories: [spring]
+categories: [Spring]
 tags: [spring]
 tages: [spring]
 redirect_from: 

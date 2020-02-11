@@ -2,7 +2,7 @@
 layout: post
 title: Java 11 New Features
 date: 2019-07-25 14:57:43
-categories: [java]
+categories: [Java]
 tags: [java]
 tags: [java]
 redirect_from: 

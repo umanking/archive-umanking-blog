@@ -2,7 +2,7 @@
 layout: post
 title: Java 동시성 프로그래밍
 date: 2019-12-30 23:06 +0900
-categories: [java]
+categories: [Java]
 tags: [java]
 ---
 

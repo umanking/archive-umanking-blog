@@ -2,7 +2,7 @@
 layout: post
 title: "엉망인 블로그를 정리하면서 느꼈던 것들"
 date: 2020-02-09 17:17 +0900
-categories: [think]
+categories: [Think]
 tags: [think]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JPA] Casecade 옵션"
-categories: [jpa]
+categories: [JPA]
 tags: [jpa]
 redirect_from: 
 - 2019/04/12/jpa-cascade/

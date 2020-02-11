@@ -2,7 +2,7 @@
 layout: post
 title: "[Java] java.io.tmpdir 경로가 존재하지 않을 때"
 date: 2020-01-01 14:15 +0900
-categories: [java]
+categories: [Java]
 tags: [java]
 ---
 java에서 `System.getProperties()`를 찍어보면, 현재 사용중인 시스템에 대한 정보들이 나온다. 이 중에서 java.io.tmpdir인 임시디렉토리에 대해서 알아보자.

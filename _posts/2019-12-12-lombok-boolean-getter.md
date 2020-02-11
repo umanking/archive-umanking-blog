@@ -2,7 +2,7 @@
 layout: post
 title: "[Lombok] boolean 필드"
 date: 2019-12-12 22:59 +0900
-categories: [spring]
+categories: [Spring]
 tags: [spring, loombok]
 redirect_from: 
 - 2019/12/12/lombok-boolean-getter/

@@ -2,7 +2,7 @@
 layout: post
 title: ". spring-redirect-attribute"
 date: 2020-01-11 00:09 +0900
-categories: [spring]
+categories: [Spring]
 tags: [spring]
 ---
 # RedirectAttribute 에 대해서 알아 보겠습니다.

@@ -2,7 +2,7 @@
 layout: post
 title: "[Tip] 개발 환경 셋팅하기"
 date: 2019-08-06 09:25:51
-categories: [tip]
+categories: [TIP]
 tags: [tip]
 redirect_from: 
 - 2019/08/06/setting-mac/

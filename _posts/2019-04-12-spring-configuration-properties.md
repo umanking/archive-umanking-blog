@@ -2,7 +2,7 @@
 layout: post
 title: "[Spring] @ConfigurationProperties를 이용한 외부 설정 정보 클래스 만들기"
 date: 2019-04-13 22:04:37
-categories: [spring]
+categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/04/12/spring-configuration-properties/

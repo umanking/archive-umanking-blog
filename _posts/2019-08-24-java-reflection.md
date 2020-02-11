@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Java] Reflection 예제"
-categories: [java]
+categories: [Java]
 tags: [java]
 date: 2019-08-24 23:36:46
 redirect_from: 

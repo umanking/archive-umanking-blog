@@ -2,7 +2,7 @@
 layout: post
 title: "[디자인패턴] 커맨드 패턴 (Command Pattern)"
 date: 2020-01-12 13:25 +0900
-categories: [java]
+categories: [Java]
 tags: [java]
 ---
 ## 개요

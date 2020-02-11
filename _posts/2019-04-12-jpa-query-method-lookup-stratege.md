@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JPA] 쿼리메서드(Lookup 전략)"
-categories: [jpa]
+categories: [JPA]
 tags: [jpa]
 redirect_from: 
 - 2019/04/12/jpa-query-method-lookup-stratege/

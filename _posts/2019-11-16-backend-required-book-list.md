@@ -2,7 +2,7 @@
 layout: post
 title: "[학습] 백엔드 개발자 독서 목록"
 date: 2019-11-16 13:33 +0900
-categories: [study]
+categories: [Study]
 tags: [study]
 redirect_from: 
 - 2019/11/16/backend-required-book-list/

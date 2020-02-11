@@ -2,7 +2,7 @@
 layout: post
 title: "Spring, RestTemplate, WebClient 차이"
 date: 2020-01-20 22:11 +0900
-categories: [spring]
+categories: [Spring]
 tags: [spring]
 ---
 

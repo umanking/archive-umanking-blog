@@ -2,7 +2,7 @@
 layout: post
 title: "[Spring] SpringApplication를 통한 코딩"
 date: 2019-04-12 09:11:51
-categories: [spring]
+categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/04/12/spring-springapplication/

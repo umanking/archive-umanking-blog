@@ -67,3 +67,9 @@ google_fonts: "Nanum+Gothic:400,700"
 highlighter: rouge
 # permalink: /:categories/:title/
 permalink: date
+
+
+breadcrumbs:
+  root:
+    hide: false  # show breadcrumbs on root/home page
+    image: true # Show image or title text

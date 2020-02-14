@@ -4,9 +4,9 @@ title: Java 11 New Features
 date: 2019-07-25 14:57:43
 categories: [Java]
 tags: [java]
-tags: [java]
 redirect_from: 
 - 2019/07/25/java-jdk11-feature/
+- java/java-jdk11-feature/
 ---
 # 1. String 메서드 
 

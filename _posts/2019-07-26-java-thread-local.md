@@ -7,6 +7,7 @@ tags:
 - Java
 redirect_from: 
 - 2019/07/26/java-thread-local/
+- java/java-thread-local/
 ---
 
 일반 변수는 특정 코드 블록내의 범위에서만 유효합니다. 반면에 ThreadLocal은 쓰레드 영역에 변수를 설정할 수 있기 때문에 특정 쓰레드가 실행하는 모든 코드에서 그 쓰레드에 설정된 변수 값을 사용할 수 있습니다. 

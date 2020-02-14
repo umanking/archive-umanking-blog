@@ -5,6 +5,7 @@ categories: [JPA]
 tags: [jpa]
 redirect_from: 
 - 2019/04/12/jpa-cascade/
+- jpa/jpa-cascade/
 date: 2019-04-12 09:01:48
 ---
 

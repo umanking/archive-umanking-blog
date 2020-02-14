@@ -5,6 +5,7 @@ categories: [JPA]
 tags: [jpa]
 redirect_from: 
 - 2019/04/12/jpa-query-method-lookup-stratege/
+- jpa/jpa-query-method-lookup-stratege/
 date: 2019-04-12 09:07:40
 ---
 > JPA에서 쿼리 메서드를 정의하는 방법에 대해서 알아보자.

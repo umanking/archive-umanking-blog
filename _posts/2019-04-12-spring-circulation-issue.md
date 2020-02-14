@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/04/12/spring-circulation-issue/
+- spring/spring-circulation-issue/
 ---
 
 > 빈 순환 참조 예외가 난 경우, 어떻게 해결하는 지 알아 보자.

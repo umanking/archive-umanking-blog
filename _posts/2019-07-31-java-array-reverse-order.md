@@ -7,6 +7,7 @@ tags:
 - Java
 redirect_from: 
 - 2019/07/31/java-array-reverse-order/
+- java/java-array-reverse-order/
 ---
 
 > Java 배열을 reverOrder정렬 하는 방법

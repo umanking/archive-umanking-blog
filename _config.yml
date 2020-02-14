@@ -76,7 +76,6 @@ defaults:
 
 google_fonts: "Nanum+Gothic:400,700"
 highlighter: rouge
-# permalink: /:categories/:title/
 permalink: date
 
 

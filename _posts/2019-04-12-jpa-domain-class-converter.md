@@ -5,6 +5,7 @@ categories: [JPA]
 tags: [jpa]
 redirect_from: 
 - 2019/04/12/jpa-domain-class-converter/
+- jpa/jpa-domain-class-converter/
 date: 2019-04-12 09:04:25
 ---
 > 도메인 클래스 컨버터에 대해서 알아보자.

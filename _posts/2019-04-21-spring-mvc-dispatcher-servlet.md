@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/04/21/spring-mvc-dispatcher-servlet/
+- spring/spring-mvc-dispatcher-servlet/
 ---
 
 

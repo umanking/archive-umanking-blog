@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/04/12/spring-concept/
+- spring/spring-concept/
 ---
 
 ## 스프링 부트의 특징

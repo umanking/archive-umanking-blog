@@ -7,6 +7,7 @@ tags:
 - Java
 redirect_from: 
 - 2019/08/06/java-object-method/
+- java/java-object-method/
 ---
 > Java Thread wait() , notify(), notifyAll() 메서드에 대해서 알아보자. 
 

@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring, loombok]
 redirect_from: 
 - 2019/12/12/lombok-boolean-getter/
+- spring/lombok-boolean-getter/
 ---
 
 ## 1. Overview

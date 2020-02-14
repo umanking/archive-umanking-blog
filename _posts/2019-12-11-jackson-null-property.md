@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring]
 redirect_from:
 - /2019/12/11/jackson-null-property/
+- spring/jackson-null-property/
 ---
 백단에서 데이터를 프론트 단에 넘길 때, 객체에 대한 property값이 널인 경우까지 넘어 간다. 
 ## 예제 코드 

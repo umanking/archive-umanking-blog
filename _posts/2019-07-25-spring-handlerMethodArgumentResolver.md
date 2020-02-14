@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/07/25/spring-handlerMethodArgumentResolver/
+- spring/spring-handlerMethodArgumentResolver/
 ---
 ## HandlerMethodArgumentResolver 
 

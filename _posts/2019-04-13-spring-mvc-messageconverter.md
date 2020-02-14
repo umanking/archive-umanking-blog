@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/04/13/spring-mvc-messageconverter/
+- spring/spring-mvc-messageconverter/
 ---
 > spring web mvc의  HttpMessageConverter에 대해서 알아보자!
 

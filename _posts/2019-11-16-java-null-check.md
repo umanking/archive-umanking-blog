@@ -6,6 +6,7 @@ categories: [Java]
 tags: [java]
 redirect_from: 
 - 2019/11/16/java-null-check/
+- java/java-null-check/
 ---
 사내에서 진행한 세미나에서 발표했던 슬라이드입니다. 
 

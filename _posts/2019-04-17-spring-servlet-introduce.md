@@ -7,6 +7,7 @@ tags: [spring]
 tages: [spring]
 redirect_from: 
 - 2019/04/17/spring-servlet-introduce/
+- spring/spring-servlet-introduce/
 ---
 
 > Servlet에 대해서 알아보자

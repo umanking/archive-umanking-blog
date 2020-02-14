@@ -6,6 +6,7 @@ tags: [jpa]
 date: 2019-04-12 09:08:56
 redirect_from: 
 - 2019/04/12/jpa-projection/
+- jpa/jpa-projection
 ---
 > JPA를 사용해서 엔티티의 일부 데이터만 가져오는 Projection에 대해서 알아보자.
 

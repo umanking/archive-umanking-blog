@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/04/13/spring-mvc-introduce/
+- spring/spring-mvc-introduce/
 
 ---
 > Spring Boot Web Mvc에 대해서 알아보자.

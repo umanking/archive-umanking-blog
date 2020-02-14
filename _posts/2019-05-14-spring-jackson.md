@@ -4,9 +4,9 @@ title: "Jackson 어노테이션 사용"
 date: 2019-05-14 22:30:23
 category: [spring]
 tags: [spring]
-
 redirect_from: 
 - 2019/05/14/spring-jackson/
+- spring/spring-jackson/
 ---
 
 > 오늘은 Jackson 어노테이션에  대해서 알아보도록 하겠습니다. 

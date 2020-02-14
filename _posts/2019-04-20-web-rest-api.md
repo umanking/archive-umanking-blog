@@ -6,6 +6,7 @@ categories: [Web]
 tags: [web]
 redirect_from: 
 - 2019/04/20/web-rest-api/
+- web/web-rest-api/
 ---
 ![](https://cdn.crunchify.com/wp-content/uploads/2012/10/Crunchify.com-RESTful-Introduction.png)
 > HTTP REST API에 대해서 알아보자

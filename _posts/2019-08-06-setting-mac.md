@@ -6,6 +6,7 @@ categories: [TIP]
 tags: [tip]
 redirect_from: 
 - 2019/08/06/setting-mac/
+- tip/setting-mac/
 ---
 예전에 포맷하고 맥 다시 설치하면서 올렸던 내용인데, 새롭게 정리해서 다시 공유 합니다. 제가 주로 개발할때 쓰는 프로그램 및 플러그인들을 모아봤습니다. 
 

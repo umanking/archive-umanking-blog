@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/04/17/spring-mvc-introduce-1/
+- spring/spring-mvc-introduce-1/
 ---
 
 > Spring MVC 에 대해서 알아보자

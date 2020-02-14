@@ -6,6 +6,7 @@ tags: [java]
 date: 2019-08-24 23:36:46
 redirect_from: 
 - 2019/08/24/java-reflection/
+- java/java-reflection
 ---
 > 자바에서 리플랙션은 하나의 기능으로, 내부 properties를 변경하거나 정보를 직접 얻어올 수 있는 manual적인 프로그래밍을 말합니다. 대표적으로 애플리케이션의 모든 클래스 정보, 혹은 메서드 정보를 직접 가져올 수 있습니다.
 

@@ -6,6 +6,7 @@ category: [JPA]
 tags: [jpa]
 redirect_from: 
 - 2019/04/12/jpa-persist-merge/
+- jpa/jpa-persist-merge/
 ---
 > JpaRepository의 구현체 SimpleJpaRepository에서 save()메서드가 내부적으로 어떻게 동작하는지 알아보자.
 

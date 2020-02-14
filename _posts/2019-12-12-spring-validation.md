@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/12/12/spring-validation/
+- spring/spring-validation/
 ---
 
 ## 1. Overview

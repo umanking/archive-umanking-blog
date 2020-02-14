@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/04/12/spring-data-common/
+- spring/spring-data-common/
 ---
 > Spring Data는 여러 가지 프로젝트로 되어 있다. 그중에서 Common 프로젝트에 대해서 알아보자.
 

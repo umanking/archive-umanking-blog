@@ -7,6 +7,7 @@ tags:
 - Java
 redirect_from: 
 - 2019/08/01/java-timer/
+- java/java-timer
 ---
 
 > 자바에서 1ms 마다 문자열을 출력하는 상황에 대해서 알아보겠습니다. 

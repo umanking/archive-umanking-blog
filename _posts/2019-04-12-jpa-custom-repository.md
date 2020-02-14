@@ -5,6 +5,7 @@ categories: [JPA]
 tags: [jpa]
 redirect_from: 
 - 2019/04/12/jpa-custom-repository/
+- jpa/jpa-custom-repository
 date: 2019-04-12 09:03:41
  
 ---

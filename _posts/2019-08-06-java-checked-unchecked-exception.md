@@ -7,6 +7,7 @@ tags:
 - Java
 redirect_from: 
 - 2019/08/06/java-checked-unchecked-exception/
+- java/java-checked-unchecked-exception/
 ---
 > Java에서 Exception의 종류 Checked Exception, Unchecked Exception(Runtime Exception)에 대해서 알아보고 Exception Handling은 어떻게 하는지 알아보자!
 

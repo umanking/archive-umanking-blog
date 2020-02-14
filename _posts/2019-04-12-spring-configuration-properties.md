@@ -6,6 +6,7 @@ categories: [Spring]
 tags: [spring]
 redirect_from: 
 - 2019/04/12/spring-configuration-properties/
+- spring/spring-configuration-properties/
 ---
 
 > 스프링부트에서 외부설정을 Configuration 클래스로 만들어서 가지고 오는 상황을 살펴 보자.

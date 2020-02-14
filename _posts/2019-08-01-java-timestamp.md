@@ -7,6 +7,7 @@ tags:
 - Java
 redirect_from: 
 - 2019/08/01/java-timestamp/
+- java/java-timestamp/
 ---
 
 > 자바에서 사용하는 TimeStamp, Unix TimeStamp, LocalDateTime, Instant 는 무엇인지 알아 보겠습니다. 

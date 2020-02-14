@@ -6,6 +6,7 @@ categories: [OOP]
 tags: [oop]
 redirect_from: 
 - 2019/06/09/oop-for-beginner/
+- oop/oop-for-beginner/
 ---
 > 인프런 최범균님의 객체 지향 프로그랭 입문 강좌를 정리한 내용입니다.
 

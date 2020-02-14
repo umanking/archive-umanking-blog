@@ -2,7 +2,7 @@
 layout: default
 ---
 <h1>{{page.title}}</h1>
-<div class="post-categories">
+<!-- <div class="post-categories">
      {% if post %}
        {% assign categories = post.categories %}
      {% else %}
@@ -13,32 +13,38 @@ layout: default
           <span>Categories:</span>&nbsp;<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
      </div>
      {% unless forloop.last %}&nbsp;{% endunless %}
-     {% endfor %}
+     {% endfor %} -->
 
-     
-<!-- <p class="post-meta" >
-     
-     {% if last_modified_at %}
-     Last updated: <time class="dt-published" itemprop="datePublished">{{ last_modified_at | date: "%Y-%m-%d" }}</time>
-      {% else %}
-     Created At: <time class="dt-published" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
-      {% endif %}
- {{ last_modified_at }}
-</p> -->
+     <p class="post-meta">
+          
 
-<!-- <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p> -->
-<p class="post-meta">
-     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
-     {% if page.last_modified_at %}
-     (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time>)
-     {% endif %}
-     {% if page.author %}
-     • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-     {% endif %}
-   </p>
+          
+          
+          
+          <!-- dateTime -->
+          </br>
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
+          {% if page.last_modified_at %}
+          <!-- Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time> -->
+          {% endif %}
+          
+          <!-- author -->
+          {% if page.author %}
+          ∙ <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+           <img src="https://s.gravatar.com/avatar/2b5f147e3d1bbe08b831c426a3153e45?s=50" class="gravatar" alt="Avatar" style="border-radius: 50%;">
+          {% endif %}    
 
-<br>
-</div>
+
+          <!-- category -->
+          </br>
+          {% for category in categories %}
+          <span itemprop="category">Category: </span>&nbsp;<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+          {% unless forloop.last %}&nbsp;{% endunless %}
+          {% endfor %}
+           
+     </p>
+     <br>
+<!-- </div> -->
 {% include nav-breadcrumbs.html %}
 {{ content }}
 <!-- {% include buyMeACoffee.html %} -->

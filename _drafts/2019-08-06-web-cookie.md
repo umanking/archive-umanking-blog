@@ -4,8 +4,7 @@ title: 쿠키란?
 category:
   - Web
 date: 2019-08-06 12:08:19
-tags:
-- Web
+tags: [Web]
 ---
 > Web 쿠키와 세션에 대해서 알아보자. 
 

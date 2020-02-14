@@ -3,8 +3,7 @@ layout: post
 title: Java 인터페이스와 추상클래스
 categoires: [java]
 date: 2019-08-06 08:36:29
-tags: 
-- Java
+tags: [Java]
 redirect_from: 
 - 2019/08/06/java-abstract-interface/
 ---

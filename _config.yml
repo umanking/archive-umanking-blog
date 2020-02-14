@@ -57,11 +57,22 @@ whitelist:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+collections:
+  my_collection:
+    output: true
+    
 defaults:
-  - scope:
+  - 
+    scope:
       path: "assets/images"
     values:
       image: true
+  - 
+    scope:
+      path: ""
+    values:
+      layout: "post" # overrides previous default layout
+      author: "andrew"
 
 google_fonts: "Nanum+Gothic:400,700"
 highlighter: rouge

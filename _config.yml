@@ -78,7 +78,7 @@ google_fonts: "Nanum+Gothic:400,700"
 highlighter: rouge
 permalink: date
 
-
+asset_url: /assets
 breadcrumbs:
   root:
     hide: false  # show breadcrumbs on root/home page

@@ -25,7 +25,7 @@ layout: default
           <!-- author -->
      </br>
           {% if page.author %}
-          <a href="https://github.com/umanking"><img src="https://s.gravatar.com/avatar/2b5f147e3d1bbe08b831c426a3153e45?s=50" class="gravatar" alt="Avatar" style="border-radius: 50%;"></a>
+          <a href="https://github.com/umanking"><img class="img-gravatar" src="https://s.gravatar.com/avatar/2b5f147e3d1bbe08b831c426a3153e45?s=50" class="gravatar" alt="Avatar" style="border-radius: 50%;"></a>
 </br><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>,
           <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time></br>
           

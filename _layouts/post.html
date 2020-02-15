@@ -33,7 +33,7 @@ layout: default
           <!-- category -->
           </br>
           {% for category in categories %}
-          <span itemprop="category">Category: </span>&nbsp;<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+          <div style="text-align: right;" itemprop="category">Category: &nbsp;<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a></div>
           {% unless forloop.last %}&nbsp;{% endunless %}
           {% endfor %}
            

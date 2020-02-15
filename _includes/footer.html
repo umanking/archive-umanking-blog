@@ -1,0 +1,28 @@
+<p></p>
+<p></p>
+<p></p>
+<h2>🥇관련 포스팅</h2>
+<div id="archives">
+    {% for category in site.categories %}
+    <div class="archive-group">
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        {% capture page_category_name %}{{ page.categories | first }}{% endcapture %}
+        {% if category_name == page_category_name %}
+            <div id="#{{ category_name | slugize }}"></div>
+            <p></p>
+            
+            <!-- <h3 class="category-head">{{ category_name }}</h3> -->
+            <a name="{{ category_name | slugize }}"></a>
+            {% for post in site.categories[category_name] %}
+            <article class="archive-item">
+            <span>
+                <span><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></span>
+                <!-- <span class="post-date">{{post.date | date_to_long_string }}</span> -->
+            </span>
+            <!-- <span class="post-dsate">{{post.date | date_to_long_string }}</div> -->
+            </article>
+            {% endfor %}
+        {% endif %}
+      </div>
+    {% endfor %}
+</div>

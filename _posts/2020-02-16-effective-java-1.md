@@ -1,22 +1,20 @@
 ---
 layout: post
-title: "[이펙티브 자바] 2장. 객체 생성과 파괴"
+title: "[이펙티브 자바 3판] 아이템 1.생성자 대신 정적 팩터리 메서드를 고려하라"
 date: 2020-02-16 11:16 +0900
 categories: [Effective Java]
-published: false
 ---
-> 이번 장은 객체의 생성과 파괴를 다룬다. 객체를 만들어야 할 때와 만들지 말아야 할때를 구분하고 올바른 객체 생성 방법을 알아 본다.
 <!-- TOC -->
 
-- [1. 아이템 1.생성자 대신 정적 팩터리 메서드를 고려하라](#1-아이템-1생성자-대신-정적-팩터리-메서드를-고려하라)
-    - [1.1. 정적 팩터리 메서드의 장점](#11-정적-팩터리-메서드의-장점)
-- [2. 아이템 2 - 생성자 인자가 많을 때는 Builder패턴 적용을 고려하라.](#2-아이템-2---생성자-인자가-많을-때는-builder패턴-적용을-고려하라)
-- [3. 아이템 3 - private 생성자나 enum 자료형은 싱글턴 패턴을 따르도록 설계하라](#3-아이템-3---private-생성자나-enum-자료형은-싱글턴-패턴을-따르도록-설계하라)
-- [4. 아이템 4. 인스턴스화를 막으려거든 private 생성자를 사용하라](#4-아이템-4-인스턴스화를-막으려거든-private-생성자를-사용하라)
+- [아이템 1.생성자 대신 정적 팩터리 메서드를 고려하라](#아이템-1생성자-대신-정적-팩터리-메서드를-고려하라)
+    - [정적 팩터리 메서드의 장점](#정적-팩터리-메서드의-장점)
+    - [정적 팩터리 메서드의 단점](#정적-팩터리-메서드의-단점)
+    - [흔히 사용한는 정적 팩터리 명명 방식](#흔히-사용한는-정적-팩터리-명명-방식)
+    - [핵심 정리](#핵심-정리)
 
 <!-- /TOC -->
 
-# 1. 아이템 1.생성자 대신 정적 팩터리 메서드를 고려하라
+# 아이템 1.생성자 대신 정적 팩터리 메서드를 고려하라
 클라이언트가 클래스의 인스턴스를 얻는 전통적인 수단은 `public 생성자`다.
 하지만 클래스는 생성자와 별도로 `정적 팩터리 메서드`를 제공할 수 있다.
 
@@ -27,7 +25,7 @@ public static Boolean valueOf(boolean b){
 }
 ```
 
-## 1.1. 정적 팩터리 메서드의 장점
+## 정적 팩터리 메서드의 장점
 
 ### 장점 1. 이름을 가질 수 있다. 
 생성자에 넘기는 매개변수와 생성자 자체만으로는 반환 될 객체의 특성을 제대로 설명하지 못한다. 반면 정적 팩터리 는 이름만 잘 지으면 반환될 객체의 특성을 쉽게 묘사할 수 있다. 
@@ -45,55 +43,34 @@ public static Boolean valueOf(boolean b){
 ### 장점 3. 반환 타입의 하위 타입 객체를 반환 할 수 있다.
 반환할 객체의 클래스를 자유롭게 선택할 수있게 하는 `엄청난 유연성`을 가진다. API를 만들 때 이 유연성을 응용하면 구현 클래스를 공개하지 않고도 그 객체를 반환할 수 있어 API를 작게 유지 할 수 있다. 이는 인터페이스를 정적 팩터리 메서드의 반환 타입으로 사용하는 인터페이스 기반 프레임워크를 만드는 핵심 기술이기도 하다.
 
-
-
-
-
 ### 장점 4. 입력 매개 변수에 따라 매번 다른 클래스의 객체를 반환할 수 있다. 
+- 반환 타입의 하위 타입이기만 하면 어떤 ㅋ르래스의 객체를 반환하든 상관 없다.
+- 심지어 다음 릴리즈에서는 또 다른 클래스의 객체를 반환해도 된다. 
+- ex )EnumSet클래스는 public 생성자 없이 오직 정적 팩터리만 제공하는데, 원소의 수에 따라 2가지 하위 클래스 중 하나의 인스턴스를 반환한다.
+  - 원소가 64개 이하면 -> RegularEnumSet
+  - 원소가 65개 이상이면 -> JumboEnumSet의 인스턴스를 반환한다.
+  - 클라이언트는 이 두 존재를 모른다.
+  - 클라이언트는 팩터리가 건네주는 객체가 어느 클래스의 인스턴스 인지 알 수도 없고 알 필요도 없다. 
+  - EnumSet의 하위 클래스 이기만 하면 된다.
 
 ### 장점 5. 정적 팩터리 메서드를 작성하는 시점에 반환할 객체의 클래스가 존재하지 않아도 된다. 
+이런 유연함은 서비스 제공자 프레임워크를 만드는 근간이 된다. 대표적인 서비스 제공자 프레임 워크로는 JDBC가 있다. 서비스 제공자 프레임워크에서의 제공자(provider)는 서비스의 구현체다. 그리고 이 구현체들을 클라이언트에 제공하는 역할을 프레임 워크가 통제하여, 클라이언트를 구현체로 부터 분리해 준다. 
 
 
-
-```java
-public class Account {
-    private Long id;
-    private String name;
-    private int age;
-    
-    // 기본 생성자
-    public Account(){
-    }
-    
-    // 인자가 있는 생성자 
-    public Account(String name, int age){
-        this.name = name;
-        this.age = age;
-    }
-    
-    // 정적 팩터리 메서드
-    public Account of(String name, int age){
-        this.name = name;
-        this.age = age;
-    }
-}
-```
-
-
-
-
-### 정적 팩터리 메서드의 단점 
+## 정적 팩터리 메서드의 단점 
 1. 상속하려면 public 이나 protected 생성자가 필여하니 정적 팩터리 메서드만 제공하면 하위 클래스를 만들 수 없다.
+   1. 어찌보면 이 제약은 상속보다 컴포지션을 사용(아이템18)하도록 유도하고 불변 타입으로 만들려면 이 제약을 지켜야 한다는 점에서 오히려 장점으로 받아들일 수도 있다.
 2. 정적 팩터리 메서드는 프로그래머가 찾기 어렵다. 
+   1. 생성자처럼 API설명에 명확히 드러나지 않으니 사용자는 정적 팩터리 메서드 방식 클래스를 인스턴스화 할 방법을 알아내야 한다.
 
-### 흔히 사용한는 정적 팩터리 명명 방식 
+
+## 흔히 사용한는 정적 팩터리 명명 방식 
 ```
 // from: 매개변수를 하나 받아서 해당 타입의 인스턴스를 반환하는 형변환 메서드
 Date d = Date.from(instant);
 
 // of: 여러 매개변수를 받아 적합한 타입의 인스턴스를 반환하는 집계 메서드
 Set<Rank> faceCards = EnumSet.of(JACK, QUEEN, KING);
-
 
 // instance 혹은 getInstance: (매개변수를 받는 다면) 매개변수로 명시한 인스턴스를 반환하지만, 같은 인스턴스 임을 보장하지지는 않는다. 
 StackWalker luke = StackWalker.getInstance(options);
@@ -102,156 +79,5 @@ StackWalker luke = StackWalker.getInstance(options);
 Object newArray = Array.newInstance(classObject, arrayLen);
 ```
 
-
-
-# 2. 아이템 2 - 생성자 인자가 많을 때는 Builder패턴 적용을 고려하라. 
-1. 점층적인 생성자 패턴
-2. 자바빈 패턴(setter 위주의) 
-3. Builder패턴 
-
-1번의 경우에 더 많은 인자 개수에 잘 적응 하지 못한다. 코드가 너무 방대해 지는 단점이 있다. 
-
-2번의 경우에는 일관성이 훼손(setter로 변경) 되고, 항상 변경 가능하다. 
-
-1,2번의 문제를 빌더 패턴으로 해결!  😃
-
-
-
-실제 실무에서는 `Lombok` 를 사용해서 클래스 위가 X 해당 생성자 위에(O) `@Builder` 를 달아준다. 
-
-```java
-public class Member {
-
-    private String name;
-    private int age;
-    private String address;
-    
-    @Builder
-    public Member(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-}
-
-```
-
-
-
-실제 사용하는 코드는 다음과 같다.
-
-```java
-public static void main(String[] args) {
-        Member member = Member.builder()
-                .name("andrew")
-                .age(32)
-                .build();
-    }
-```
-
-
-
-
-
-# 3. 아이템 3 - private 생성자나 enum 자료형은 싱글턴 패턴을 따르도록 설계하라
-
-싱글턴 패턴을 만들 때는 private 생성자를 통해서 해당 클래스 내에서 만들고(유일하게 만듬) 외부에서 접근할 때는 getInstance()를 통해서 만들어진 객체의 참조값으로 접근하고 사용한다. 싱글턴 패턴을 사용하는 케이스는 파일 시스템, 단 하나만을 요구하는 그런 상황에서 쓰인다. 
-
-enum 자료형을 이용해서 싱글턴 패턴을 만들 수 있는 것 자체를 몰랐다. (기능적으로 public 필드를 사용해서 접근하는 방법과 동일) 하지만 다음과 같은 장점이 존재한다.  
-
-- 좀더 간결하다는 것
-
-    ```jav
-    public enum Elvis {
-        INSTANCE;
-    }
-    ```
-
-    
-
-- 직렬화가 자동으로 처리 된다는 것 
-
-- 리플렉션을 통한 공격에도 안전
-
-    ```java
-    public class PrivateInvoker {
-    
-        public static void main(String[] args) throws Exception {
-            Constructor<?> constructor = Private.class.getDeclaredConstructors()[0];
-            constructor.setAccessible(true); //접근할 수 있는 권한을 획득 함
-            Private p = (Private) constructor.newInstance();
-    
-        }
-    
-        class Private {
-           	private Private() {
-                System.out.println("hello world");
-            }
-        }
-    }
-    
-    ```
-
-그래서 원소가 하나 뿐인 enum 자료형이야 말로 싱글턴을 구현하는 가장 좋은 방법이다.
-
-# 4. 아이템 4. 인스턴스화를 막으려거든 private 생성자를 사용하라
-
-<b>단순히 정적 메서드와 정적 필드만을 담은 클래스</b>를 만들어야 하는 경우가 있다. 이 방식은 객체 지향적으로 좋은 않은 클래스라고 여길 수 있지만, 이러한 클래스도 나름의 쓰임새가 있다.
-
-예를 들어 ```java.lang.Math```와 ```java.util.Arrays``` 클래스처럼 기본 타입 값이나 배열 관련 메서드를 모아 놓을 수 있다. 또한, ```java.util.Collections```처럼 특정 인터페이스를 구현하는 객체를 생성해주는 정적 메서드를 가지고 있는 클래스가 있을 수 있다.
-
-다음 코드는 Math 클래스의 일부분이다.
-
-```java
-public final class Math {
-
-    private Math() {}
-
-    public static final double E = 2.7182818284590452354;
-
-    public static final double PI = 3.14159265358979323846;
-
-
-    public static double sin(double a) {
-        return StrictMath.sin(a); // default impl. delegates to StrictMath
-    }
-
-    public static double cos(double a) {
-        return StrictMath.cos(a); // default impl. delegates to StrictMath
-    }
-
-    public static double tan(double a) {
-        return StrictMath.tan(a); // default impl. delegates to StrictMath
-    }
-    
-    // 생략 ...
-}
-```
-
-<br/>
-
-<b>정적 멤버만 담은 유틸리티 클래스는 사실 인스턴스로 만들어 쓰려고 설계한 것이 아니다.</b> Math 클래스는 ```final``` 클래스이기 때문에 상속해서 하위 클래스에 메서드를 넣을 수도 없다. 그리고 private 생성자를 만들었기 때문에 컴파일러가 자동으로 기본 생성자를 만들지도 않는다.
-
-유틸리티 클래스를 추상 클래스로 만들면 인스턴스 생성하는 것을 막을 수 없다. 이러한 종류의 클래스는 애초에 다른 클래스에서 상속 받아 사용하도록 설계한 것이 아니기 때문에 인스턴스가 생성되는 것을 막는 것이 좋다.
-
-인스턴스 생성을 막는 방법은 간단한다. 개발자가 클래스의 기본 생성자를 빼먹으면 컴파일러가 기본 생성자를 추가해준다. 그렇기 때문에 명시적으로 <b>private 생성자</b>를 클래스에 추가하면 클래스의 인스턴스 생성을 막을 수 있다.
-
-다음 코드는 Utils 클래스에 private 생성자를 넣는 예제이다.
-
-```java
-public class Utils {
-
-    private Utils() {
-        throw new Exception("Utils 클래스는 인스턴스화를 할 수 없습니다.");
-    }
-
-    public static int plus(int a, int b) { 
-        return a + b
-    }
-
-    // 정적 멤버 선언...
-}
-```
-
-<br/>
-
-만약 Utils 클래스를 상속 받아서 사용하는 코드를 작성하면, 하위 클래스 생성자에서는 에러가 발생한다. 하위 클래스에서는 상위 클래스의 생성자를 반드시 호출해야 하는데, 이를 private 접근자로 선언했으므로 상위 클래스의 생성자에 접근할 수 없다.
+## 핵심 정리 
+정적 팩터리 메서드와 public 생성자는 각자의 쓰임새가 있으니 상대적인 장단점을 이해하고 사용하는 것이 좋다. 그렇더고 하더라도 **정적 팩터리를 사용하는 게 유리한 경우가 더 많으므로** 무작정 public 생성자를 제공하던 습관이 있다면 고치자.

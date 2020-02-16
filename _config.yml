@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Andrew's dev story 📕
+title: 앤드류의 개발 이야기🍎
 email: umanking@gmail.com
 description: "Java, Spring BackEnd Developer Blog"
 baseurl: "" # the subpath of your site, e.g. /blog

@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { mar
 main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
 
 /** Images */
-img { max-width: 110%; vertical-align: middle;}
+img { max-width: 100%; vertical-align: middle;}
 img :not(.img-gravatar){
   padding: 18px 0px;
 }
@@ -31,13 +31,13 @@ strong {text-decoration: underline;}
   padding-bottom: 25px;
 }
 
-body {
+/* body {
   counter-reset: h1
 }
 
 h1 {
   counter-reset: h2
-}
+} */
 
 /* h2 {
   counter-reset: h3
@@ -75,9 +75,7 @@ ul, ol { margin-left: 30px; }
 li > ul, li > ol { margin-bottom: 0; }
 
 /** Headings */
-h1, h2, h3, h4, h5, h6 { font-weight: 400;}
-
-h2 {padding-top: 25px; font-size: 32px;}
+h1, h2, h3, h4, h5, h6 { font-weight: 700;}
 
 /** Links */
 a { color: #2a7ae2; text-decoration: none; }

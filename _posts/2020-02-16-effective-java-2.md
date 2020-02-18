@@ -2,7 +2,7 @@
 layout: post
 title: "[이펙티브 자바 3판] 아이템 2.생성자 인자가 많을 때는 Builder패턴 적용을 고려하라."
 categories: [Effective Java]
-date: 2020-02-16 18:53 +0900
+date: 2020-02-18 21:03 +0900
 ---
 
 <!-- TOC -->

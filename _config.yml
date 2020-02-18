@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -24,7 +24,7 @@ description: "Java, Spring BackEnd Developer Blog"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://umanking.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: umanking87
-github_username:  umanking
+github_username: umanking
 
 # Build settings
 theme: minima
@@ -61,12 +61,19 @@ collections:
   my_collection:
     output: true
 
+# defaults:
+#   - scope:
+#       path: ""
+#     values:
+#       layout: "post" # overrides previous default layout
+#       author: "andrew"
+
 google_fonts: "Nanum+Gothic:400,700"
 highlighter: rouge
 permalink: date
 
-asset_url: /assets
-breadcrumbs:
-  root:
-    hide: false  # show breadcrumbs on root/home page
-    image: true # Show image or title text
+# asset_url: /assets
+# breadcrumbs:
+#   root:
+#     hide: false # show breadcrumbs on root/home page
+#     image: true # Show image or title text

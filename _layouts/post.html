@@ -2,54 +2,42 @@
 layout: default
 ---
 <h1>{{page.title}}</h1>
-<!-- <div class="post-categories">
+
+<p class="post-meta">
      {% if post %}
-       {% assign categories = post.categories %}
+     {% assign categories = post.categories %}
      {% else %}
-       {% assign categories = page.categories %}
+     {% assign categories = page.categories %}
      {% endif %}
-     {% for category in categories %}
-     <div style="float: right;">
-          <span>Categories:</span>&nbsp;<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-     </div>
-     {% unless forloop.last %}&nbsp;{% endunless %}
-     {% endfor %} -->
 
-     <p class="post-meta">
-          <!-- dateTime -->
-          <!-- <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time> -->
-          {% if page.last_modified_at %}
-          <!-- Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time> -->
-          {% endif %}
-          
-          <!-- author -->
+     <!-- <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time> -->
+     {% if page.last_modified_at %}
+     <!-- Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time> -->
+     {% endif %}
+
      </br>
-          {% if page.author %}
-          <a href="https://github.com/umanking"><img class="img-gravatar" src="https://s.gravatar.com/avatar/2b5f147e3d1bbe08b831c426a3153e45?s=50" class="gravatar" alt="Avatar" style="border-radius: 50%;"></a>
-</br><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>,
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time></br>
-          
-          {% for category in categories %}
-          <span style="text-align: right;" itemprop="category">Category: &nbsp;<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a></span>
-          {% unless forloop.last %}&nbsp;{% endunless %}
-          {% endfor %}
-          {% endif %}    
+     {% if page.title %}
+     <a href="https://github.com/umanking"><img class="img-gravatar"
+               src="https://s.gravatar.com/avatar/2b5f147e3d1bbe08b831c426a3153e45?s=50" class="gravatar" alt="Avatar"
+               style="border-radius: 50%;"></a>
+     </br><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+               itemprop="name">andrew</span></span>,
+     <time datetime="{{ page.date | date_to_xmlschema }}"
+          itemprop="datePublished">{{ page.date | date_to_long_string }}</time></br>
 
-           
-     </p>
-     <br>
-     {{ content }}
+     {% for category in categories %}
+     <span style="text-align: right;" itemprop="category">Category: &nbsp;<a
+               href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a></span>
+     {% unless forloop.last %}&nbsp;{% endunless %}
+     {% endfor %}
+     {% endif %}
+</p>
+<br>
+{{ content }}
 <!-- {% include buyMeACoffee.html %} -->
-     {% include footer.html %}
+{% include footer.html %}
 
-     <script src="https://utteranc.es/client.js"
-          repo="umanking/blog-comment"
-          issue-term="pathname"
-          theme="github-light"
-          crossorigin="anonymous"
-          async>
-     </script>
-     {% include ad.html %}
-
-
-
+<script src="https://utteranc.es/client.js" repo="umanking/blog-comment" issue-term="pathname" theme="github-light"
+     crossorigin="anonymous" async>
+</script>
+{% include ad.html %}

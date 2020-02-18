@@ -1,90 +1,56 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="naver-site-verification" content="b659a30674ad44210dfcace94f379d9f5fe48f25"/>
-    <style>
-      @font-face {
-        font-family: 'D2 coding';
-        font-style: normal;
-        font-weight: 400;
-        src: url('D2Coding.eot');
-        src: local('※'), local('D2Coding'),
-             url('D2Coding.eot?#iefix') format('embedded-opentype'),
-             url('D2Coding.woff2') format('x-woff2'),
-             url('D2Coding.woff') format('woff'),
-             url('D2Coding.ttf') format('truetype'),
-             url('D2Coding.svg') format('svg');
-      }
-      @font-face {
-        font-family: 'D2 coding';
-        font-style: normal;
-        font-weight: 700;
-        src: url('d2codingbold.eot');
-        src: local('※'), local('D2Coding Bold'),
-             url('D2CodingBold.eot?#iefix') format('embedded-opentype'),
-             url('D2CodingBold.woff2') format('x-woff2'),
-             url('D2CodingBold.woff') format('woff'),
-             url('D2CodingBold.ttf') format('truetype'),
-             url('D2CodingBold.svg') format('svg');
-      }
-    </style>
-    <link rel="stylesheet" href="/assets/main.css">
-    <title>{{ page.title }}</title>
-    
-    <!-- <link href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css" rel="stylesheet" type="text/css"/> -->
-    <!-- <link href="//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo" rel="stylesheet" type="text/css"/> -->
-    <link href="{{ site.asset_url }}/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
-    <!-- <link href="/assets/css/syntax.css", rel="stylesheet" type="text/css"> -->
-    <!-- <link rel="stylesheet" href="/assets/minima-social-icons.svg"> -->
-    <!-- <link href="//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css" rel="stylesheet" /> -->
-    <!-- <link href="https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="/assets/css/d2coding-ligature.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="/assets/css/d2coding.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="http://cdn.jsdelivr.net/gh/joungkyun/font-d2coding@1.3.2/d2coding.css" rel="stylesheet" type="text/css"> -->
 
-    <meta name="google-site-verification" content="aSSHEchLQce__GmLQpDL1ugfKy4c7itn8yrSqQLqD-A" />
-    
-    <!-- 404 redirect -->
-    <!-- {% if page.url == "/404.html" %}
-    <meta http-equiv="refresh" content="5; url=/">
-    {% endif %} -->
-    {% if page.image %}
-      <meta property="og:image" content="/assets/images/spongebob.png">
-    {% else %}
-      <meta property="og:image" content="/assets/images/spongebob.png">
-    {% endif %}
-    
-    {% seo %}
-   
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130245279-5"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
+  <title>{{ page.title }}</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="naver-site-verification" content="b659a30674ad44210dfcace94f379d9f5fe48f25" />
+  <meta name="google-site-verification" content="aSSHEchLQce__GmLQpDL1ugfKy4c7itn8yrSqQLqD-A" />
 
-      gtag('config', 'UA-130245279-5');
-    </script>
-  </head>
-  <body>
-    <header class="site-header" role="banner">
-      <div class="wrapper">
-        <a class="site-title" rel="author" href="/">{{site.title}}</a>
-        <nav class="site-nav">
-          <div class="trigger">
-            <a class="page-link" href="/about/">PROFILE</a>
-            <a class="page-link" href="/categories/">CATEGORIES</a>
-            <!-- <a class="page-link" href="/tags/">TAGS</a> -->
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-          {{ content }}
-          {% include ad.html %}
-      </div>
-    </main>
-  </body>
+  {% if page.image %}
+  <meta property="og:image" content="/assets/images/spongebob.png">
+  {% else %}
+  <meta property="og:image" content="/assets/images/spongebob.png">
+  {% endif %}
+
+  {% seo %}
+
+  <link href="{{ site.asset_url }}/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/assets/main.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130245279-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130245279-5');
+  </script>
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="wrapper">
+      <a class="site-title" rel="author" href="/">{{site.title}}</a>
+      <nav class="site-nav">
+        <div class="trigger">
+          <a class="page-link" href="/about/">PROFILE</a>
+          <a class="page-link" href="/categories/">CATEGORIES</a>
+          <!-- <a class="page-link" href="/tags/">TAGS</a> -->
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+      {% include ad.html %}
+    </div>
+  </main>
+</body>
+
 </html>

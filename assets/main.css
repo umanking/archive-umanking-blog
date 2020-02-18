@@ -75,7 +75,21 @@ ul, ol { margin-left: 30px; }
 li > ul, li > ol { margin-bottom: 0; }
 
 /** Headings */
-h1, h2, h3, h4, h5, h6 { font-weight: 700;}
+
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /** Links */
 a { color: #2a7ae2; text-decoration: none; }
@@ -133,7 +147,7 @@ table td { border: 1px solid #e8e8e8; }
 /** Site header */
 .site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 55.95px; position: relative; }
 
-.site-title { font-size: 26px; font-weight: 600; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
+.site-title { font-size: 26px; font-weight: 500; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
 
 .site-title, .site-title:visited { color: #424242; }
 

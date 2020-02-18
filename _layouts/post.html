@@ -10,10 +10,6 @@ layout: default
      {% assign categories = page.categories %}
      {% endif %}
 
-     <!-- <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time> -->
-     {% if page.last_modified_at %}
-     <!-- Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time> -->
-     {% endif %}
 
      </br>
      {% if page.title %}
@@ -22,15 +18,28 @@ layout: default
                style="border-radius: 50%;"></a>
      </br><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
                itemprop="name">andrew</span></span>,
+
      <time datetime="{{ page.date | date_to_xmlschema }}"
-          itemprop="datePublished">{{ page.date | date_to_long_string }}</time></br>
+          itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
+     {% if page.last_modified_at %}
+     <!-- "%Y-%m-%d" -->
+     <!-- date_to_long_string -->
+     (updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}"
+          itemprop="dateModified">{{ page.last_modified_at | date : "%Y-%m-%d" }}</time>)
+     {% endif %}
+
 
      {% for category in categories %}
-     <span style="text-align: right;" itemprop="category">Category: &nbsp;<a
+     </br>
+     <span style="text-align: right;" itemprop="category">category: &nbsp;<a
                href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a></span>
      {% unless forloop.last %}&nbsp;{% endunless %}
      {% endfor %}
      {% endif %}
+
+     </br>
+
+
 </p>
 <br>
 {{ content }}

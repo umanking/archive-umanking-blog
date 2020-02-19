@@ -3,7 +3,7 @@ layout: post
 title: "[Spring] 빈 순환참조 이슈"
 date: 2019-04-12 09:10:25
 categories: [Spring]
-tags: [spring]
+tags: [Spring]
 redirect_from: 
 - 2019/04/12/spring-circulation-issue/
 - spring/spring-circulation-issue/

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Spring Data JPA - @Transactional를 통한 Optimization"
+title: "[JPA]@Transactional를 통한 Optimization"
 categories: [JPA]
-tags: [jpa]
+tags: [JPA]
 date: 2019-04-12 09:09:13
 redirect_from: 
 - 2019/04/12/jpa-transactional/

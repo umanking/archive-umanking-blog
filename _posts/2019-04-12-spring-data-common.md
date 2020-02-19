@@ -3,7 +3,7 @@ layout: post
 title: "[Spring] Spring Data Common 프로젝트 살펴보기"
 date: 2019-04-12 09:03:09
 categories: [Spring]
-tags: [spring]
+tags: [Spring]
 redirect_from: 
 - 2019/04/12/spring-data-common/
 - spring/spring-data-common/
@@ -103,11 +103,11 @@ public class Post {
 ```
 
 ```xml
-    <dependency>
-        <groupId>com.h2database</groupId>
-        <artifactId>h2</artifactId>
-        <scope>test</scope>
-    </dependency>
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <scope>test</scope>
+</dependency>
 ```
 
 테스트용 h2 데이터베이스를 사용한다.
@@ -148,7 +148,3 @@ findAll() 메서드는 파라미터가 없는 경우에 전체 엔티티를 조�
 ```java
     Page<T> findAll(Pageable pageable);
 ```
-
-## 참고자료
-
-- [백기선님 인프런 - spring-data-jpa](

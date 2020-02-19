@@ -3,7 +3,7 @@ layout: post
 title: "[Spring] Tomcat Multipart Exception 디버깅"
 date: 2020-01-06 20:59 +0900
 categories: [Spring]
-tags: [spring]
+tags: [Spring]
 ---
 
 ## 개요

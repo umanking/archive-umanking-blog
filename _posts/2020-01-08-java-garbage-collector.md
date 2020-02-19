@@ -3,7 +3,7 @@ layout: post
 title: "Garbage Collection - #1부 JVM HotSpot"
 date: 2020-01-08 21:33 +0900
 categories: [Java]
-tags: [java]
+tags: [Java]
 ---
 
 ## 목표

@@ -3,7 +3,7 @@ layout: post
 title: "[디자인패턴] 컴포지트 패턴(Composite Pattern)"
 date: 2020-01-05 14:02 +0900
 categories: [Java]
-tags: [java]
+tags: [Java]
 ---
 
 ## 개요

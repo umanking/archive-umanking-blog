@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Java]  Timer로 1초간격으로 문자열 출력하기"
-categoires: [java]
+categories: [Java]
 date: 2019-08-01 10:42:08
 tags: 
 - Java

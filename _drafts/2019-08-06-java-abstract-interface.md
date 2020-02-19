@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java 인터페이스와 추상클래스
-categoires: [java]
+categories: [Java]
 date: 2019-08-06 08:36:29
 tags: [Java]
 redirect_from: 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Java] Exception"
-categoires: [java]
+categories: [Java]
 date: 2019-08-06 11:07:14
 tags: 
 - Java
@@ -27,12 +27,12 @@ Throwable 클래스는 Error 클래스와 Exception 클래스의 최상위 클�
 ## 3. Checked Exception과 Unchecked Exception 차이
 
 
-|                           | checked                                                      | Unchecked(Runtime)                                           |
-| ------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 처리여부                  | 반드시 예외 처리해야함<br />(try-catch, throw exception)     | 처리를 강제 하지 않는다                                      |
-| 확인시점                  | 컴파일                                                       | 런타입                                                       |
-| 예외 발생시 트랜잭션 처리 | 롤백 X                                                       | 롤백O                                                        |
-| Example                   | Exception의 상속받는 하위 클래스 중 RuntimeException을 제외한 모든 예외<br />- IOException<br />- SQLException | RuntimeException 하위 예외<br />- NullPointerException<br />-IllegalArgumentException<br/>-IndexOutOfBoundException<br />- SystemException |
+|                | checked                                                                                     | Unchecked(Runtime)                                                                                                                     |
+| -------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| 처리여부           | 반드시 예외 처리해야함<br />(try-catch, throw exception)                                              | 처리를 강제 하지 않는다                                                                                                                          |
+| 확인시점           | 컴파일                                                                                         | 런타입                                                                                                                                    |
+| 예외 발생시 트랜잭션 처리 | 롤백 X                                                                                        | 롤백O                                                                                                                                    |
+| Example        | Exception의 상속받는 하위 클래스 중 RuntimeException을 제외한 모든 예외<br />- IOException<br />- SQLException | RuntimeException 하위 예외<br />- NullPointerException<br />-IllegalArgumentException<br/>-IndexOutOfBoundException<br />- SystemException |
 
 
 가장 명확한 기준은 **“꼭 처리해야 하는지 여부”** CheckedException은 발생할 가능성이 있는 메서드라면 반드시 try/catch 나 throw로 던져서 처리해야한다. 반면에 UncheckedException은 명시적으로 예외를 처리하지 않아도 된다. 이 예외는 피할 수 있지만 **개발자의 부주의에 의해서 발생하는 경우가** 대부분, 그렇기 때문에 굳이 명시적으로 예외를 처리하지 않아도 된다.

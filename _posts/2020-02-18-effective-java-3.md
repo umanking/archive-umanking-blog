@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[이펙티브 자바 3판] 아이템 3.private 생성자나 열거 타입으로 싱글턴임을 보증하라."
+title: "[이펙티브 자바] 3.private 생성자나 열거 타입으로 싱글턴임을 보증하라."
 categories: [Effective Java]
 date: 2020-02-18 22:03 +0900
 ---

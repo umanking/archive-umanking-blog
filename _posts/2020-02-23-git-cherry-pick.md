@@ -4,7 +4,7 @@ title: "Git 체리픽(CherryPick)이란?"
 date: 2020-02-23 13:51 +0900
 categories: [Git]
 ---
-# 체리픽(Cherry Pick)?
+## 체리픽(Cherry Pick)?
 git cherry pick은 현재 작업 브랜치에서 커밋을 해야 하는데, 다른 브랜치에 커밋을 했을 때 **해당 커밋을 Cherry Pick(체리 따듯이 똑 따서) 지금의 브랜치에 이어 붙이는 것을 의미한다.** 굉장히 편리하고 유용하지만, `merge`나 `rebase` 를 대체 하면 안된다고 한다.
 
 ## 사용법

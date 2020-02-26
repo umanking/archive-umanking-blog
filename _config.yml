@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 책읽는 개발자 | 어제보다 성장 합니다.
+title: 앤드류 기술 블로그 | 어제보다 성장 합니다.
 email: umanking@gmail.com
-description: "Java, Spring BackEnd Developer Blog"
+description: "Java, Spring 관련 기술 블로그"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://umanking.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: umanking87

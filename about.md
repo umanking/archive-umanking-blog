@@ -1,17 +1,22 @@
 ---
 layout: page
-title: Introduce MySelf
+title: 나를 소개 합니다.
 permalink: /about/
 ---
-### Me?
-- BackEnd Developer
-- Java, Spring, JPA(ORM) 
+## 자기소개
+안녕하세요🙋‍♂️
+저는 `백엔드 개발자` 입니다. 주로 Java, Spring을 다루고 DDD, 클린코드, 읽기 쉬운 코드를 작성하는 것에 관심이 많습니다. 
 
-### What I Like
-- Architecture, Flow Chart 
-- Read Spring Framework Code (to learn Design Pattern)
-- Read Tech Blog and summary
+아무래도 우리가 만나게 되는 건 신규 서비스 기능을 개발하더라도 곧 레거시가 된다는 사실이고, 결국에는 누군가는 그 레거시를 읽어야 하기 때문입니다. 피할 수 없는 숙명. 
 
-### Contact
-- Email: <umanking@gmail.com>
-- Github: [umanking](https://github.com/umanking)
+### 성격 
+물리학을 전공했고, 전체(아주 세세한 동작원리)를 이해 하지 않으면 안되는 성격입니다. 최대한 다양한 사람들과 의견을 나누고 조율하면서 만들어 가는 것을 좋아합니다. 당연히 그런 점에서 스스로에게 동기부여가 됩니다.
+강박은 아니지만, 부족함이 많기 때문에 매일 정해진 시간, 일정한 분량을 학습하려고 합니다.
+단순 학습만이 지속 가능하지 않다는 것을 알고 있기 때문에 최대한 블로그에 기록을 남기려고 합니다. 
+
+쓰다보니... 자기 소개서를 쓰는 느낌도 들고 재미가 있어서, 나중에 추가적으로 업데이트를 해야겠습니다. 
+
+### 문의
+뭐든 궁금한 사항은 아래 이메일을 통해서 보내주세요 !
+- <umanking@gmail.com>
+- [https://github.com/umanking](https://github.com/umanking)

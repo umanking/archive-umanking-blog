@@ -82,7 +82,8 @@ figcaption {
 
 /* custom by andrew */
 strong {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  background-color: #ffffcc;
 }
 
 .center {

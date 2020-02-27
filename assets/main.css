@@ -21,7 +21,7 @@ figure {
 
 /** Basic styling */
 body {
-  font-family: 'Nanum Gothic Coding', monospace;
+  font-family: 'Nanum Gothic', 'Nanum Gothic Coding', monospace;
   font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #111;
   background-color: #fdfdfd;
@@ -52,7 +52,7 @@ dl,
 figure,
 .highlight {
   margin-bottom: 15px;
-  font-family: 'Nanum Gothic Coding'
+  font-family: 'Nanum Gothic', 'Nanum Gothic Coding'
 }
 
 /** `main` element */
@@ -190,7 +190,7 @@ blockquote {
   padding-left: 15px;
   font-size: 16px;
   letter-spacing: 0px;
-  font-family: 'Nanum Gothic Coding', monosapce;
+  font-family: 'Nanum Gothic', 'Nanum Gothic Coding', monosapce;
 }
 
 blockquote> :last-child {
@@ -206,25 +206,25 @@ code {
   border: 1px solid #e8e8e8;
   border-radius: 3px;
   background-color: #eef;
-  font-family: 'Nanum Gothic Coding'monosapce;
+  font-family: 'Nanum Gothic', 'Nanum Gothic Coding'monosapce;
 }
 
 code {
   padding: 1px 5px;
-  font-family: 'Nanum Gothic Coding', monosapce;
+  font-family: 'Nanum Gothic', 'Nanum Gothic Coding', monosapce;
 }
 
 pre {
   padding: 8px 12px;
   overflow-x: auto;
-  font-family: 'Nanum Gothic Coding', monosapce;
+  font-family: 'Nanum Gothic', 'Nanum Gothic Coding', monosapce;
 }
 
 pre>code {
   border: 0;
   padding-right: 0;
   padding-left: 0;
-  font-family: 'Nanum Gothic Coding', monosapce;
+  font-family: 'Nanum Gothic', 'Nanum Gothic Coding', monosapce;
 }
 
 /** Wrapper */
@@ -842,9 +842,10 @@ table td {
   font-family: 'Nanum Gothic Coding';
 }
 
-@import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo);
+/* @import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo); */
 
-@font-face {
+
+/* @font-face {
   font-family: "Apple SD Gothic Neo";
   src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot");
   src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot?#iefix") format("embedded-opentype"),
@@ -852,6 +853,6 @@ table td {
     url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff") format("woff"),
     url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.svg#Apple SD Gothic Neo") format("svg");
-}
+} */
 
 /*# sourceMappingURL=main.css.map */

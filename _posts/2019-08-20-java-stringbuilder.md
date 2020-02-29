@@ -7,6 +7,7 @@ date: 2019-08-20 17:40:48
 redirect_from: 
 - 2019/08/20/java-stringbuilder/
 - java/java-stringbuilder
+- 2019/08/20/java-stringbuilder.html
 ---
 > String, StringBuffer, StringBuilder 차이점에 대해서 알아보겠습니다. 
 

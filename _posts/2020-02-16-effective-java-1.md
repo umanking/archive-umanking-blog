@@ -5,6 +5,8 @@ description: 이펙티브 자바, 아이템1.생성자 대신 정적 팩터리 �
 date: 2020-02-18 20:03 +0900
 categories: [Effective Java]
 ---
+![effective java image](https://user-images.githubusercontent.com/28615416/75598228-81ca1c00-5add-11ea-9319-e949af4e07cd.png){:.postImage}
+
 <!-- TOC -->
 
 - [정적 팩터리 메서드의 장점](#정적-팩터리-메서드의-장점)

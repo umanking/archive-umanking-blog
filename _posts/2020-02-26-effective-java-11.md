@@ -5,6 +5,8 @@ description: 이펙티브 자바, 아이템11.equals를 재정의하려거든 ha
 categories: [Effective Java]
 date: 2020-02-26 21:32 +0900
 ---
+![effective java image](https://user-images.githubusercontent.com/28615416/75598228-81ca1c00-5add-11ea-9319-e949af4e07cd.png){:.postImage}
+
 equals를 재정의한 클래스 모두에서 hashCode도 재정의해야 한다. 그렇지 않으면 hashCode 일반 규약을 어기게 되어 해당 클래스의 인스턴스를 HashMap이나 HashSet같은 컬렉션의 원소로 사용할 때 문제를 일으킨다.
 
 ## Object 명세 규약

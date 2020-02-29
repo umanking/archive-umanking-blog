@@ -5,6 +5,9 @@ description: 이펙티브 자바, 아이템6 불필요한 객체 생성을 피�
 categories: [Effective Java]
 date: 2020-02-22 22:05 +0900
 ---
+
+![effective java image](https://user-images.githubusercontent.com/28615416/75598228-81ca1c00-5add-11ea-9319-e949af4e07cd.png){:.postImage}
+
 <!-- TOC -->
 
 - [생성비용이 아주 비싼 객체](#생성비용이-아주-비싼-객체)

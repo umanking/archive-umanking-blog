@@ -61,6 +61,13 @@ main {
   /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
+.postImage {
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /** Images */
 img {
   max-width: 100%;

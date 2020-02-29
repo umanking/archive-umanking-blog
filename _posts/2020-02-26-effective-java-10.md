@@ -5,6 +5,8 @@ description: 이펙티브 자바, 아이템10.equals는 일반 규약을 지켜 
 categories: [Effective Java]
 date: 2020-02-26 05:18 +0900
 ---
+![effective java image](https://user-images.githubusercontent.com/28615416/75598228-81ca1c00-5add-11ea-9319-e949af4e07cd.png){:.postImage}
+
 # 3장 모든 객체의 공통 메서드
 Object는 객체를 만들 수 있는 구체 클래스지만 기본적으로는 상속해서 사용하도록 설계되었다.
 Object에서 final이 아닌 메서드(equals, hashcode, toString, clone, finalize)는 모두 재정의를 염두에 두고 설계된 것이라 재정의 시 지켜야 하는 일반 규약이 명확히 정의되어 있다. 그래서 Object를 상속하는 클래스, 즉 모든 클래스는 이 메서드들을 일반 규약에 맞게 재정의해야 한다. 이 메서드들을 잘못 구현하면 대상 클래스가 이 규약을 준수한다고 가정하는 클래스(HashMap과 HashSet)를 오동작하게 만들 수 있다. 

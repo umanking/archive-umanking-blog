@@ -5,6 +5,9 @@ description: 이펙티브 자바, 아이템12.toString을 항상 재정의하라
 categories: [Effective Java]
 date: 2020-02-27 20:45 +0900
 ---
+![effective java image](https://user-images.githubusercontent.com/28615416/75598228-81ca1c00-5add-11ea-9319-e949af4e07cd.png){:.postImage}
+
+
 Object의 기본 toString 메서드가 우리가 작성한 클래스에 적합한 문자열을 반환하는 경우는 거의 없다.
 `PhoneNumber@adbbd`처럼 단순히 `클래스_이름@16진수로_표시한_해시코드`를 반환할 뿐이다.
 toString의 일반 규약에 따르면 '간결하면서 사람이 읽기 쉬운 형태의 유익한 정보'를 반환해야 한다.

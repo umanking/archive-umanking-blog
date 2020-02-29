@@ -5,6 +5,7 @@ description: 이펙티브 자바, 아이템9.try-finally보다는 try-with-resou
 categories: [Effective Java]
 date: 2020-02-25 20:10 +0900
 ---
+![effective java image](https://user-images.githubusercontent.com/28615416/75598228-81ca1c00-5add-11ea-9319-e949af4e07cd.png){:.postImage}
 
 자바 라이브러리에는 close메서드를 호출해 직접 닫아줘야 하는 자원이 많다,
 InputStream, OutputStream, java.sql.Connection등이 좋은 예다,

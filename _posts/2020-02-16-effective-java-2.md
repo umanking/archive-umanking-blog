@@ -5,6 +5,7 @@ description: 이펙티브 자바, 아이템2.생성자 인자가 많을 때는 B
 categories: [Effective Java]
 date: 2020-02-18 21:03 +0900
 ---
+![effective java image](https://user-images.githubusercontent.com/28615416/75598228-81ca1c00-5add-11ea-9319-e949af4e07cd.png){:.postImage}
 
 <!-- TOC -->
 

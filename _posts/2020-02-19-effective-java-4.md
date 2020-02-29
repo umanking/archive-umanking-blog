@@ -5,6 +5,9 @@ description: 이펙티브 자바, 아이템4.인스턴스화를 막으려거든 
 categories: [Effective Java]
 date: 2020-02-19 20:43 +0900
 ---
+
+![effective java image](https://user-images.githubusercontent.com/28615416/75598228-81ca1c00-5add-11ea-9319-e949af4e07cd.png){:.postImage}
+
 <!-- TOC -->
 
 - [정적 메서드와 정적 필드는 언제 만드나?](#%ec%a0%95%ec%a0%81-%eb%a9%94%ec%84%9c%eb%93%9c%ec%99%80-%ec%a0%95%ec%a0%81-%ed%95%84%eb%93%9c%eb%8a%94-%ec%96%b8%ec%a0%9c-%eb%a7%8c%eb%93%9c%eb%82%98)

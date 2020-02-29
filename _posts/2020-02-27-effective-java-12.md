@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "[이펙티브 자바] 12.toString을 항상 재정의하라."
+title: "[이펙티브 자바 3판] 아이템12.toString을 항상 재정의하라."
+description: 이펙티브 자바, 아이템12.toString을 항상 재정의하라.
 categories: [Effective Java]
 date: 2020-02-27 20:45 +0900
 ---

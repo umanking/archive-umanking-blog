@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "[이펙티브 자바] 6.불필요한 객체 생성을 피하라."
+title: "[이펙티브 자바 3판] 아이템6.불필요한 객체 생성을 피하라."
+description: 이펙티브 자바, 아이템6 불필요한 객체 생성을 피하라.
 categories: [Effective Java]
 date: 2020-02-22 22:05 +0900
 ---

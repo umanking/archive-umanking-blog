@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[이펙티브 자바 3판] 아이템15.클래스와 멤버의 접근 권한을 최소화 하라"
-description: 이펙티브 자바, 아이템15.클래스와 멤버의 접근 권한을 최소화 하라.
+description: 정보 은닉을 통해서 클래스와 멤버 변수의 접근 권한을 최소화 한다.
 categories: [Effective Java]
 date: 2020-02-29 22:00 +0900
 ---
